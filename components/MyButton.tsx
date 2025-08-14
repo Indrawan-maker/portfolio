@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import type { MouseEvent } from "react";
-import type { PanInfo } from "framer-motion";
+
 
 export default function MyButton() {
     return (
