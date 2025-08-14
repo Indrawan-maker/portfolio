@@ -2,7 +2,6 @@ import React from 'react'
 import Orb from '../ui/Orb';
 import { LuSend } from "react-icons/lu";
 import { motion } from "framer-motion";
-import ShinyText from '../ui/ShinyText';
 
 const Hero = () => {
     return (
