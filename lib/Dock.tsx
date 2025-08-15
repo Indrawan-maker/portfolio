@@ -3,8 +3,6 @@
 import React, {
     Children,
     cloneElement,
-    useEffect,
-    useMemo,
     useRef,
     useState,
 } from "react";
@@ -19,12 +17,8 @@ export type DockItemData = {
 export type DockProps = {
     items: DockItemData[];
     className?: string;
-    distance?: number;
     panelHeight?: number;
     baseItemSize?: number;
-    dockHeight?: number;
-    magnification?: number;
-    spring?: SpringOptions;
 };
 
 type DockItemProps = {
@@ -58,9 +52,12 @@ function DockItem({
             role="button"
             aria-haspopup="true"
         >
-            {Children.map(children, (child) =>
-                cloneElement(child as React.ReactElement, { isHovered })
-            )}
+            {Children.map(children, (child) => {
+                if ((child as React.ReactElement).type === DockLabel) {
+                    return cloneElement(child as React.ReactElement<DockLabelProps>, { isHovered });
+                }
+                return child;
+            })}
         </div>
     );
 }

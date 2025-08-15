@@ -95,7 +95,6 @@ const Hero: React.FC = () => {
                         items={items}
                         panelHeight={68}
                         baseItemSize={50}
-                        magnification={10}
                         className="z-30"
                         
                     />
