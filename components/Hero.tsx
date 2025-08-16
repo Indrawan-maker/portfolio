@@ -19,16 +19,20 @@ import Dock from '../lib/Dock';
 import Image from 'next/image';
 import profile from './images/profile1.webp'
 import profileHover from './images/profile2.webp'
+import FuzzyText from './ui/FuzzyText';
 
 const Hero: React.FC = () => {
     // Add state for profile image hover
     const [isProfileHovered, setIsProfileHovered] = useState(false);
+    const [hoverIntensity, setHoverIntensity] = useState(0.2);
+    const [enableHover, setEnableHover] = useState(true);
+
 
     const items = [
-        { icon: <RiHome2Line size={22}  style={{ color: "white" }}/>, label: 'Home', onClick: () => alert('Home!') },
-        { icon: <IoSchoolOutline size={23}  style={{ color: "white" }}/>, label: 'About', onClick: () => alert('Archive!') },
-        { icon: <GoProjectSymlink size={22}  style={{ color: "white" }}/>, label: 'Project', onClick: () => alert('Profile!') },
-        { icon: <RiContactsLine size={20}  style={{ color: "white" }}/>, label: 'Contact Me', onClick: () => alert('Contact Me!') },
+        { icon: <RiHome2Line size={22} style={{ color: "white" }} />, label: 'Home', onClick: () => alert('Home!') },
+        { icon: <IoSchoolOutline size={23} style={{ color: "white" }} />, label: 'About', onClick: () => alert('Archive!') },
+        { icon: <GoProjectSymlink size={22} style={{ color: "white" }} />, label: 'Project', onClick: () => alert('Profile!') },
+        { icon: <RiContactsLine size={20} style={{ color: "white" }} />, label: 'Contact Me', onClick: () => alert('Contact Me!') },
     ];
 
     const socialLinks = [
@@ -54,7 +58,7 @@ const Hero: React.FC = () => {
         }
     ];
 
-    const SocialButton = ({ href, icon}: { href: string, icon: React.ReactNode}) => {
+    const SocialButton = ({ href, icon }: { href: string, icon: React.ReactNode }) => {
         const buttonContent = (
             <motion.button
                 whileHover={{ scale: 1, rotate: -20, transition: { duration: 0.6 } }}
@@ -68,7 +72,7 @@ const Hero: React.FC = () => {
                         glareOpacity={0.3}
                         glareAngle={-30}
                         glareSize={500}
-                        transitionDuration={800}
+                        transitionDuration={900}
                         playOnce={false}
                         style={{
                             width: '100%',
@@ -85,7 +89,6 @@ const Hero: React.FC = () => {
                 </div>
             </motion.button>
         );
-
         return (
             <a href={href} target="_blank" rel="noopener noreferrer">
                 {buttonContent}
@@ -96,17 +99,17 @@ const Hero: React.FC = () => {
     return (
         <section className='min-h-screen'>
             <div className='z-30 flex justify-center items-center pt-4 px-4 fixed bottom-0 left-1/2 -translate-x-1/2'>
-                    <Dock
-                        items={items}
-                        panelHeight={68}
-                        baseItemSize={50}
-                        className="z-30"
-                        
-                    />
+                <Dock
+                    items={items}
+                    panelHeight={68}
+                    baseItemSize={50}
+                    className="z-30"
+
+                />
             </div>
             <div className="mt-16 text-white">
                 <div className='relative overflow-hidden'>
-                    <div 
+                    <div
                         className='absolute top-0 left-0 z-0 w-full h-[600px]'
                     >
                         <Orb
@@ -118,69 +121,79 @@ const Hero: React.FC = () => {
                     </div>
                     <div className='relative z-20 flex flex-col items-center justify-center h-[600px]'>
                         <div className='absolute z-10 text-center'>
-                            <div className="flex justify-center items-center gap-3">
+                            <div className="flex justify-center items-center gap-1 ml-46">
 
-                            <div>
-                                <motion.button
-                                    whileHover={{ scale: 1.2, rotate: -16, transition: { duration: 0.6 }}}
-                                    whileTap={{ scale: 1.4 }}
-                                    onMouseEnter={() => setIsProfileHovered(true)}
-                                    onMouseLeave={() => setIsProfileHovered(false)}
-                                    className="flex items-center justify-center cursor-pointer border rounded-full p-0 bg-transparent w-20 h-20"
-                                    aria-label="profile"
-                                >
-                                    <div className="w-full h-full rounded-full overflow-hidden relative">
-                                        <GlareHover
-                                            glareColor="#ffffff"
-                                            glareOpacity={0.3}
-                                            glareAngle={-30}
-                                            glareSize={500}
-                                            transitionDuration={800}
-                                            playOnce={false}
-                                            style={{
-                                                width: '100%',
-                                                height: '100%',
-                                                borderRadius: '9999px',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                backgroundColor: 'transparent'
-                                            }}
-                                        >
-                                            <motion.div
-                                                animate={{ opacity: isProfileHovered ? 0 : 1 }}
-                                                transition={{ duration: 0.3 }}
-                                                style={{ position: 'absolute' }}
+                                <div>
+                                    <motion.button
+                                        whileHover={{ scale: 1.2, rotate: -16, transition: { duration: 0.6 } }}
+                                        whileTap={{ scale: 1.4 }}
+                                        onMouseEnter={() => setIsProfileHovered(true)}
+                                        onMouseLeave={() => setIsProfileHovered(false)}
+                                        className="flex items-center justify-center border rounded-full p-0 bg-transparent w-20 h-20"
+                                        aria-label="profile"
+                                    >
+                                        <div className="w-full h-full rounded-full overflow-hidden relative">
+                                            <GlareHover
+                                                glareColor="#ffffff"
+                                                glareOpacity={0.3}
+                                                glareAngle={-30}
+                                                glareSize={500}
+                                                transitionDuration={1300}
+                                                playOnce={false}
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    borderRadius: '9999px',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    backgroundColor: 'transparent'
+                                                }}
                                             >
-                                                <Image src={profile} alt="profile" />
-                                            </motion.div>
-                                            
-                                            <motion.div
-                                                animate={{ opacity: isProfileHovered ? 1 : 0 }}
-                                                transition={{ duration: 0.3 }}
-                                                style={{ position: 'absolute' }}
-                                            >
-                                                <Image src={profileHover} alt="profile hover" />
-                                            </motion.div>
-                                        </GlareHover>
-                                    </div>
-                                </motion.button>
-                            </div>
-                            
-                            <div className='grid justify-center items-center'>
-                                <h2 className='font-bold text-2xl tracking-tight leading-9'>Muhammad Indrawan.</h2>
-                                <div className='flex'>
-                                <p className='flex tracking-tight text-sm'><Image src={flag} alt="Indonesia flag" className='w-9 h-6'/>
-                                Based in Indonesia
-                                </p>
+                                                <motion.div
+                                                    animate={{ opacity: isProfileHovered ? 0 : 1 }}
+                                                    transition={{ duration: 0.3 }}
+                                                    style={{ position: 'absolute' }}
+                                                >
+                                                    <Image src={profile} alt="profile" />
+                                                </motion.div>
+
+                                                <motion.div
+                                                    animate={{ opacity: isProfileHovered ? 1 : 0 }}
+                                                    transition={{ duration: 0.3 }}
+                                                    style={{ position: 'absolute' }}
+                                                >
+                                                    <Image src={profileHover} alt="profile hover" />
+                                                </motion.div>
+                                            </GlareHover>
+                                        </div>
+                                    </motion.button>
                                 </div>
-                            </div>
+
+                                <div className='justify-center items-center ml-2'>
+                                    <div className='flex justify-center items-center -ml-13 mb-1'>
+                                        <h2 className='tracking-tight'>
+                                    <FuzzyText
+                                        baseIntensity={0}
+                                        hoverIntensity={hoverIntensity}
+                                        enableHover={enableHover}
+                                    >
+                                            Muhammad Indrawan.
+                                    </FuzzyText>
+                                        </h2>
+                                        </div>
+                                    <div className='flex'>
+                                        <p className='flex tracking-tight text-sm'><Image src={flag} alt="Indonesia flag" className='w-9 h-6' />
+                                            Based in Indonesia
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div className='space-y-2'>
                                 <h1 className='text-center text-white font-bold text-6xl md:text-8xl tracking-tight'>
                                     FULLSTACK
                                 </h1>
-                                
+
                                 <div className='flex items-center justify-center gap-4'>
                                     <h1 className='text-center text-white font-bold text-6xl md:text-8xl tracking-tight'>
                                         DEVELOPER
@@ -220,7 +233,7 @@ const Hero: React.FC = () => {
 
                             <div className='flex justify-center gap-4 mt-8'>
                                 {socialLinks.map((link, index) => (
-                                    <SocialButton 
+                                    <SocialButton
                                         key={index}
                                         href={link.href}
                                         icon={link.icon}

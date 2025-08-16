@@ -1,5 +1,6 @@
 import { Experience } from "@/components/Experience";
 import Hero from "@/components/Hero";
+import { TechStack } from "@/components/TechStack";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="max-w-7xl w-full">
       <Hero/>
       <Experience />
+      <TechStack />
     </div>
   </main>
   )
