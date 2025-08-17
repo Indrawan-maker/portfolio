@@ -1,5 +1,6 @@
 import { Experience } from "@/components/Experience";
 import Hero from "@/components/Hero";
+import { Project } from "@/components/Project";
 import { TechStack } from "@/components/TechStack";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero/>
       <Experience />
       <TechStack />
+      <Project />
     </div>
   </main>
   )

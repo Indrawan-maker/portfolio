@@ -21,7 +21,7 @@ export const Experience = () => {
     return (
         <div className="flex justify-center items-center">
         <section className="-mt-22 justify-center w-160">
-            <h1 className="mb-4 text-gray-300 text-2xl">Experience</h1>
+            <h1 className="mb-4 text-gray-300 text-xl tracking-widest">Experience</h1>
             <div className="flex justify-around cursor-pointer mb-3 bg-white rounded-md h-8 items-center">
                 <div className="">
                     <button className="text-sm">Work</button>
@@ -56,6 +56,6 @@ export const Experience = () => {
                 </div>
             </div>
         </section>
-                                </div>
+        </div>
     )
 }
