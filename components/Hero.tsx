@@ -130,7 +130,6 @@ const Hero: React.FC = () => {
                                         onMouseEnter={() => setIsProfileHovered(true)}
                                         onMouseLeave={() => setIsProfileHovered(false)}
                                         className="flex items-center justify-center border rounded-full p-0 bg-transparent w-20 h-20"
-                                        aria-label="profile"
                                     >
                                         <div className="w-full h-full rounded-full overflow-hidden relative">
                                             <GlareHover
@@ -190,15 +189,13 @@ const Hero: React.FC = () => {
                                 </div>
                             </div>
                             <div className='space-y-2'>
-                                <h1 className='text-center text-white font-bold text-6xl md:text-8xl tracking-tight'>
+                                <h1 className='text-center text-white font-semibold text-6xl md:text-8xl tracking-tight'>
                                     FULLSTACK
                                 </h1>
-
                                 <div className='flex items-center justify-center gap-4'>
-                                    <h1 className='text-center text-white font-bold text-6xl md:text-8xl tracking-tight'>
+                                    <h1 className='text-center text-white font-semibold text-6xl md:text-8xl tracking-tight'>
                                         DEVELOPER
                                     </h1>
-
                                     <motion.button
                                         whileHover={{ scale: 1.1, transition: { duration: 0.7 } }}
                                         whileTap={{ scale: 1.4 }}

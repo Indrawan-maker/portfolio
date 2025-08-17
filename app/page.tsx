@@ -1,4 +1,5 @@
 import { Experience } from "@/components/Experience";
+import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Project } from "@/components/Project";
 import { TechStack } from "@/components/TechStack";
@@ -11,6 +12,7 @@ export default function Home() {
       <Experience />
       <TechStack />
       <Project />
+      <Footer />
     </div>
   </main>
   )
