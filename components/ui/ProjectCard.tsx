@@ -18,9 +18,9 @@ export const ProjectCard = () => {
             className='rounded-md w-full min-h rounded-b-none'
             />
             <div className='flex justify-between text-white py-3 px-3'>
-                <h4 className='font-medium text-xl'>Puzzle 3x3</h4>
+                <h4 className='font-normal text-xl'>Puzzle 3x3</h4>
                 <motion.button 
-                whileHover={{ scale: 1.1,  transition: { duration: 0.7 } }}
+                whileHover={{ scale: 1,  transition: { duration: 0.7 } }}
                 className='flex items-center justify-center gap-2 font-bold w-32 h-10 border-1 border-white rounded-3xl cursor-pointer'
                 >
                     <GlareHover
@@ -47,6 +47,13 @@ export const ProjectCard = () => {
                                             </GlareHover>
                     </motion.button>
             </div>
+            <div>
+                <p className='text-neutral-500 px-3 text-sm'>An anime image puzzle game in a 3x3 grid.</p>
+            </div>
+            <section className='flex px-3 mt-12 gap-2 text-sm'>
+                <div className='bg-white rounded-md w-12 h-6 items-center justify-center text-center'>React</div>
+                <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'>Tailwindcss</div>
+            </section>
         </section>
         </>
     )
