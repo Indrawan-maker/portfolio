@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <>
+        <section className="flex justify-center items-center">
             <div className="mt-46 justify-center items-center">
                 <section className="w-160 h-46 rounded-md border-1 border-white">
                     <div className="flex justify-between px-6 py-6">
@@ -37,6 +37,6 @@ export const Footer = () => {
                     <h6>Muhammad Indrawan.</h6>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
