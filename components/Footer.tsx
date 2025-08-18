@@ -19,7 +19,7 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div>
-                            <h5 className="text-neutral-300 mb-4">Let's Connect</h5>
+                            <h5 className="text-neutral-300 mb-4">Let&apos;s Connect</h5>
                             <div className="text-neutral-500">
                                 <ul>
                                     <li><a href="" className="cursor-pointer hover:text-white">Email</a></li>
@@ -33,7 +33,7 @@ export const Footer = () => {
                     </div>
                 </section>
                 <div className="text-neutral-700 flex justify-between h-44 w-160 py-4">
-                    <h6>&copy; 2024</h6>
+                    <h6>© 2024</h6>
                     <h6>Muhammad Indrawan.</h6>
                 </div>
             </div>

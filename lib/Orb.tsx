@@ -5,22 +5,6 @@ import { useEffect, useRef } from "react";
 import { Renderer, Program, Mesh, Triangle, Vec3 } from "ogl";
 
 
-
-interface OrbProps {
-  hue?: number;
-  hoverIntensity?: number;
-  rotateOnHover?: boolean;
-  forceHoverState?: boolean;
-}
-
-export default function Orb({
-  hue = 0,
-  hoverIntensity = 0.2,
-  rotateOnHover = true,
-  forceHoverState = false,
-}: OrbProps) {
-  const ctnDom = useRef<HTMLDivElement>(null);
-
   const vert = /* glsl */ `
     precision highp float;
     attribute vec2 position;
@@ -179,6 +163,22 @@ export default function Orb({
       gl_FragColor = vec4(col.rgb * col.a, col.a);
     }
   `;
+
+
+interface OrbProps {
+  hue?: number;
+  hoverIntensity?: number;
+  rotateOnHover?: boolean;
+  forceHoverState?: boolean;
+}
+
+export default function Orb({
+  hue = 0,
+  hoverIntensity = 0.2,
+  rotateOnHover = true,
+  forceHoverState = false,
+}: OrbProps) {
+  const ctnDom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = ctnDom.current;

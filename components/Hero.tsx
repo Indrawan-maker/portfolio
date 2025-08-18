@@ -22,10 +22,9 @@ import profileHover from './images/profile2.webp'
 import FuzzyText from './ui/FuzzyText';
 
 const Hero: React.FC = () => {
-    // Add state for profile image hover
     const [isProfileHovered, setIsProfileHovered] = useState(false);
-    const [hoverIntensity, setHoverIntensity] = useState(0.2);
-    const [enableHover, setEnableHover] = useState(true);
+    const [hoverIntensity] = useState(0.2);
+    const [enableHover] = useState(true);
 
 
     const items = [

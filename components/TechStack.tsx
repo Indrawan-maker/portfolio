@@ -1,6 +1,5 @@
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiMysql } from "react-icons/si";
 import { BiLogoReact } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
 import { BiLogoNodejs } from "react-icons/bi";

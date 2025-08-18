@@ -1,8 +1,6 @@
 "use client"
 
-import { useState } from "react"
 import Icon1 from "./images/uinsi-icon.webp";
-import Icon2 from "./images/globe.webp"
 import Image from 'next/image';
 
 
@@ -10,22 +8,15 @@ import Image from 'next/image';
 
 export const Experience = () => {
 
-    const [btn, setBtn] = useState(true)
 
 
 
-    function handleBtn() {
-        setBtn(prevBtn => !prevBtn)
-    }
 
     return (
         <div className="flex justify-center items-center">
         <section className="-mt-22 justify-center w-160">
             <h1 className="mb-4 text-gray-300 text-xl tracking-widest">Experience</h1>
             <div className="flex justify-around cursor-pointer mb-3 bg-white rounded-md h-8 items-center">
-                <div className="">
-                    <button className="text-sm">Work</button>
-                </div>
                 <div>
                     <button className="">Studies</button>
                 </div>
