@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export const ProjectCard = () => {
     return (
-        <>
+        <a href='https://anime-puzzle-3x3.vercel.app/'>
         <section className="w-100 h-90 border-1 border-white rounded-md transition-transform duration-300 
     hover:-translate-y-2 hover:shadow-lg">
             <Image 
@@ -55,6 +55,6 @@ export const ProjectCard = () => {
                 <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'>Tailwindcss</div>
             </section>
         </section>
-        </>
+        </a>
     )
 }

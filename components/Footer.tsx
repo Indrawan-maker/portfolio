@@ -12,9 +12,9 @@ export const Footer = () => {
                             <h5 className="text-neutral-300 mb-4">Explore</h5>
                             <div className="text-neutral-500">
                                 <ul>
-                                    <li>Home</li>
-                                    <li>About</li>
-                                    <li>Project</li>
+                                    <li><a className="cursor-pointer hover:text-white">Home</a></li>
+                                    <li><a className="cursor-pointer hover:text-white">About</a></li>
+                                    <li><a className="cursor-pointer hover:text-white">Project</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -22,10 +22,10 @@ export const Footer = () => {
                             <h5 className="text-neutral-300 mb-4">Let's Connect</h5>
                             <div className="text-neutral-500">
                                 <ul>
-                                    <li>Email</li>
-                                    <li>Linkedin</li>
-                                    <li>Github</li>
-                                    <li>Instagram</li>
+                                    <li><a href="" className="cursor-pointer hover:text-white">Email</a></li>
+                                    <li><a className="cursor-pointer hover:text-white">Linkedin</a></li>
+                                    <li><a className="cursor-pointer hover:text-white">Github</a></li>
+                                    <li><a className="cursor-pointer hover:text-white">Instagram</a></li>
                                 </ul>
                             </div>
                         </div>
