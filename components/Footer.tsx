@@ -1,7 +1,8 @@
 export const Footer = () => {
     return (
-        <section className="flex justify-center items-center" id="footer">
-            <div className="mt-46 justify-center items-center">
+        <section className=" md:flex justify-center items-center" 
+        id="footer">
+            <div className=" mt-120 md:mt-46 justify-center items-center">
                 <section className="w-160 h-46 rounded-md border-1 border-white">
                     <div className="flex justify-between px-6 py-6">
                         <div>
