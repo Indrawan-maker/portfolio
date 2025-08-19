@@ -26,12 +26,19 @@ const Hero: React.FC = () => {
     const [hoverIntensity] = useState(0.2);
     const [enableHover] = useState(true);
 
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id)
+        if(element) {
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+
 
     const items = [
-        { icon: <RiHome2Line size={22} style={{ color: "white" }} />, label: 'Home', onClick: () => alert('Home!') },
-        { icon: <IoSchoolOutline size={23} style={{ color: "white" }} />, label: 'About', onClick: () => alert('Archive!') },
-        { icon: <GoProjectSymlink size={22} style={{ color: "white" }} />, label: 'Project', onClick: () => alert('Profile!') },
-        { icon: <RiContactsLine size={20} style={{ color: "white" }} />, label: 'Contact Me', onClick: () => alert('Contact Me!') },
+        { icon: <RiHome2Line size={22} style={{ color: "white" }} />, label: 'Home', onClick: () => scrollToSection('home')},
+        { icon: <IoSchoolOutline size={23} style={{ color: "white" }} />, label: 'About', onClick: () => scrollToSection('experience')},
+        { icon: <GoProjectSymlink size={22} style={{ color: "white" }} />, label: 'Project', onClick: () => scrollToSection('project')},
+        { icon: <RiContactsLine size={20} style={{ color: "white" }} />, label: 'Contact Me', onClick: () => scrollToSection('footer')},
     ];
 
     const socialLinks = [
@@ -96,7 +103,7 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <section className='min-h-screen'>
+        <section className='' id='home'>
             <div className='z-30 flex justify-center items-center pt-4 px-4 fixed bottom-0 left-1/2 -translate-x-1/2'>
                 <Dock
                     items={items}
@@ -120,8 +127,7 @@ const Hero: React.FC = () => {
                     </div>
                     <div className='relative z-20 flex flex-col items-center justify-center h-[600px]'>
                         <div className='absolute z-10 text-center'>
-                            <div className="flex justify-center items-center gap-1 ml-46">
-
+                            <div className="flex justify-center items-center gap-1 ml-18 md:ml-46">
                                 <div>
                                     <motion.button
                                         whileHover={{ scale: 1.2, rotate: -16, transition: { duration: 0.6 } }}
@@ -191,8 +197,8 @@ const Hero: React.FC = () => {
                                 <h1 className='text-center text-white font-semibold text-6xl md:text-8xl tracking-tight'>
                                     FULLSTACK
                                 </h1>
-                                <div className='flex items-center justify-center gap-4'>
-                                    <h1 className='text-center text-white font-semibold text-6xl md:text-8xl tracking-tight'>
+                                <div className='flex items-center justify-center gap-1 md:gap-4'>
+                                    <h1 className='text-center text-white font-semibold text-4xl md:text-8xl tracking-tight'>
                                         DEVELOPER
                                     </h1>
                                     <motion.button

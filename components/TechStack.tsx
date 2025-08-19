@@ -24,10 +24,10 @@ export const TechStack = () => {
                 </li>
                 <li className="flex items-center justify-center gap-3 text-gray-300"><BiLogoNodejs className="w-10 h-10 text-white"/> NodeJS
                 </li>
-                <li className="flex gap-3 ml-2 items-center text-gray-300"><FaGitAlt className="w-10 h-10 text-white"/> Git
+                <li className="flex gap-10 md:gap-3 ml-4 md:ml-2 items-center text-gray-300"><FaGitAlt className="w-10 h-10 text-white"/> Git
                 </li>
                 {/* mr auto harus di bagian akhir agar terdorong sisanya */}
-                <li className="flex gap-3 mr-auto items-center text-gray-300"><RiTailwindCssFill className="w-10 h-10 text-white"/> Tailwind CSS
+                <li className="flex gap-3 mr-auto ml-2 md:ml-0 items-center text-gray-300"><RiTailwindCssFill className="w-10 h-10 text-white"/> Tailwind CSS
                 </li>
             </ul>
         </div>
