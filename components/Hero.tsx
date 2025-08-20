@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
             <motion.button
                 whileHover={{ scale: 1, rotate: -20, transition: { duration: 0.6 } }}
                 whileTap={{ scale: 1.4 }}
-                className="flex items-center justify-center cursor-pointer border rounded-full p-0 bg-transparent w-13 h-13"
+                className="flex items-center justify-center cursor-pointer border rounded-full p-0 bg-transparent w-10 h-10 md:w-13 md:h-13"
                 aria-label="Social media link"
             >
                 <div className="w-full h-full rounded-full overflow-hidden">
@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
                     </div>
                     <div className='relative z-20 flex flex-col items-center justify-center h-[600px]'>
                         <div className='absolute z-10 text-center'>
-                            <div className="flex justify-center items-center gap-1 ml-18 md:ml-46">
+                            <div className="flex justify-center items-center gap-1 ml-14 md:ml-28">
                                 <div>
                                     <motion.button
                                         whileHover={{ scale: 1.2, rotate: -16, transition: { duration: 0.6 } }}
@@ -174,13 +174,14 @@ const Hero: React.FC = () => {
                                     </motion.button>
                                 </div>
 
-                                <div className='justify-center items-center ml-2'>
+                                <div className='justify-center items-center ml-1'>
                                     <div className='flex justify-center items-center -ml-13 mb-1'>
                                         <h2 className='tracking-tight'>
                                     <FuzzyText
                                         baseIntensity={0}
                                         hoverIntensity={hoverIntensity}
                                         enableHover={enableHover}
+                                        
                                     >
                                             Muhammad Indrawan.
                                     </FuzzyText>
@@ -194,11 +195,11 @@ const Hero: React.FC = () => {
                                 </div>
                             </div>
                             <div className='space-y-2'>
-                                <h1 className='text-center text-white font-semibold text-6xl md:text-8xl tracking-tight'>
+                                <h1 className='text-center text-white font-semibold text-5xl md:text-8xl tracking-tight'>
                                     FULLSTACK
                                 </h1>
                                 <div className='flex items-center justify-center gap-1 md:gap-4'>
-                                    <h1 className='text-center text-white font-semibold text-4xl md:text-8xl tracking-tight'>
+                                    <h1 className='text-center text-white font-semibold text-3xl md:text-8xl tracking-tight'>
                                         DEVELOPER
                                     </h1>
                                     <motion.button
@@ -233,7 +234,7 @@ const Hero: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className='flex justify-center gap-4 mt-8'>
+                            <div className='flex justify-center gap-4 mt-4'>
                                 {socialLinks.map((link, index) => (
                                     <SocialButton
                                         key={index}

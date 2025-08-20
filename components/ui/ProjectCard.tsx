@@ -11,9 +11,10 @@ import { motion } from "framer-motion";
 
 export const ProjectCard = () => {
     return (
-        <div className='grid md:ml-0 md:flex md:gap-4'>
-        <a href='https://anime-puzzle-3x3.vercel.app/'>
-        <section className="w-94 h-88 md:w-80 md:h-80 border-1 border-white rounded-md transition-transform duration-300 md:mb-0 mb-6
+        <div className='md:ml-0 md:flex md:gap-4 grid items-center justify-center'>
+        <a className='justify-center items-center flex'
+        href='https://anime-puzzle-3x3.vercel.app/'>
+        <section className="w-82 h-78 md:w-80 md:h-80 border-1 border-white rounded-md transition-transform duration-300 md:mb-0 mb-6
     hover:-translate-y-2 hover:shadow-lg">
             <Image 
             src={projectImage1}
@@ -53,13 +54,14 @@ export const ProjectCard = () => {
             <div>
                 <p className='text-neutral-500 px-3 text-sm'>An anime image puzzle game in a 3x3 grid.</p>
             </div>
-            <section className='flex px-3 mt-12 gap-2 text-sm'>
+            <section className='flex px-3 mt-8 md:mt-12 gap-2 text-sm'>
                 <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'>Tailwindcss</div>
             </section>
         </section>
         </a>
-        <a href='https://portfolio-sigma-virid-u677bz60w1.vercel.app/'>
-        <section className="w-94 h-88 md:w-80 md:h-80 border-1 border-white rounded-md transition-transform duration-300 mb-8 md:md-0
+        <a className='justify-center items-center flex'
+        href='https://portfolio-sigma-virid-u677bz60w1.vercel.app/'>
+        <section className="w-82 h-78 md:w-80 md:h-80 border-1 border-white rounded-md transition-transform duration-300 md:mb-0 mb-6
     hover:-translate-y-2 hover:shadow-lg">
             <Image 
             src={projectImage2}
@@ -97,9 +99,9 @@ export const ProjectCard = () => {
                     </motion.button>
             </div>
             <div>
-                <p className='text-neutral-500 px-3 text-sm'>A simple portfolio to showcase my project as a developer.</p>
+                <p className='text-neutral-500 px-3 py-1 text-sm'>A simple portfolio to showcase my project as a developer.</p>
             </div>
-            <section className='flex px-3 mt-12 md:mt-6 gap-2 text-sm'>
+            <section className='flex px-3 p-1 md:mt-3 gap-2 text-sm'>
                 <div className='bg-white w-14 h-6 items-center justify-center rounded-md text-center'>NextJS</div>
                 <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'>Tailwindcss</div>
             </section>
