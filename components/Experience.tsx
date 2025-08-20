@@ -24,7 +24,7 @@ export const Experience = () => {
             <div className="flex h-38 md:h-29 border-2 rounded-xl border-white">
                 <div className="flex px-6 md:p-0 gap-1 md:gap-0">
                 <ul>
-                    <li className="relative grid justify-center gap-2 p-1 py-14 md:p-7 md:py-full">
+                    <li className="relative grid justify-center gap-2 p-1 py-13 md:p-7 md:py-full">
                         <div className="absolute inset-0 flex justify-center">
                             <div className="w-[1px] bg-white"></div>
                         </div>

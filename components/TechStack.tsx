@@ -27,7 +27,7 @@ export const TechStack = () => {
                 <li className="flex gap-2 md:gap-3 -ml-2 md:ml-2 items-center text-gray-300"><FaGitAlt className="w-6 h-6 md:w-10 md:h-10 text-white"/> Git
                 </li>
                 {/* mr auto harus di bagian akhir agar terdorong sisanya */}
-                <li className="flex gap-2 md:gap-3 mr-auto ml-4 md:ml-0 items-center text-gray-300"><RiTailwindCssFill className="w-6 h-6 md:w-10 md:h-10 text-white"/> Tailwind CSS
+                <li className="flex gap-2 md:gap-3 mr-auto ml-6 md:ml-0 items-center text-gray-300"><RiTailwindCssFill className="w-6 h-6 md:w-10 md:h-10 text-white"/> Tailwind CSS
                 </li>
             </ul>
         </div>

@@ -55,7 +55,7 @@ export const ProjectCard = () => {
                 <p className='text-neutral-500 px-3 text-sm'>An anime image puzzle game in a 3x3 grid.</p>
             </div>
             <section className='flex px-3 mt-8 md:mt-12 gap-2 text-sm'>
-                <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'>Tailwindcss</div>
+                <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'><h1 className='text-center mt-0.5'>Tailwindcss</h1></div>
             </section>
         </section>
         </a>
@@ -101,9 +101,13 @@ export const ProjectCard = () => {
             <div>
                 <p className='text-neutral-500 px-3 py-1 text-sm'>A simple portfolio to showcase my project as a developer.</p>
             </div>
-            <section className='flex px-3 p-1 md:mt-3 gap-2 text-sm'>
-                <div className='bg-white w-14 h-6 items-center justify-center rounded-md text-center'>NextJS</div>
-                <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'>Tailwindcss</div>
+            <section className='flex px-3 p-1 md:mt-3 gap-2 text-sm items-center'>
+                <div className='items-center'>
+                <div className='bg-white w-14 h-6 items-center justify-center rounded-md text-center'><h1 className="text-center mt-0.5">NextJS</h1></div>
+                </div>
+                <div className='items-center justify-center'>
+                <div className='bg-white w-22 h-6 items-center justify-center rounded-md text-center'><h1 className="text-center mt-0.5">Tailwindcss</h1></div>
+                </div>
             </section>
         </section>
         </a>
