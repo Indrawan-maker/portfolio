@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             icon: <LuGithub className="w-6 h-6" style={{ strokeWidth: '1px' }} />,
         },
         {
-            href: "mailto:indrawanismail)@gmail.com",
+            href: "mailto:indrawanismail0@gmail.com",
             icon: <RiCalendarScheduleLine className="w-6 h-6" style={{ strokeWidth: '0.1px' }} />,
         },
         {
