@@ -1,5 +1,8 @@
 "use client";
 
+import { Content } from "next/font/google";
+import Link from "next/link";
+
 import React, {
     Children,
     cloneElement,
@@ -10,7 +13,8 @@ import React, {
 export type DockItemData = {
     icon: React.ReactNode;
     label: React.ReactNode;
-    onClick: () => void;
+    href?: string;
+    onClick?: () => void;
     className?: string;
 };
 
@@ -24,6 +28,7 @@ export type DockProps = {
 type DockItemProps = {
     className?: string;
     children: React.ReactNode;
+    href?: string;
     onClick?: () => void;
     baseItemSize: number;
 };
@@ -31,13 +36,14 @@ type DockItemProps = {
 function DockItem({
     children,
     className = "",
+    href,
     onClick,
     baseItemSize,
 }: DockItemProps) {
     const ref = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
 
-    return (
+    const content = (
         <div
             ref={ref}
             style={{
@@ -46,7 +52,7 @@ function DockItem({
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={onClick}
+            onClick={href ? undefined : onClick}
             className={`relative inline-flex items-center justify-center rounded-full bg-[#060010] border-neutral-700 border-2 shadow-md ${className}`}
             tabIndex={0}
             role="button"
@@ -60,6 +66,8 @@ function DockItem({
             })}
         </div>
     );
+
+    return href ? <Link href={href}>{content}</Link> : content;
 }
 
 type DockLabelProps = {
@@ -115,6 +123,7 @@ export default function Dock({
                 {items.map((item, index) => (
                     <DockItem
                         key={index}
+                        href={item.href} 
                         onClick={item.onClick}
                         className={item.className}
                         baseItemSize={baseItemSize}

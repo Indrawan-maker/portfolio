@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Orb from '../lib/Orb';
 import { LuSend } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
@@ -26,19 +26,14 @@ const Hero: React.FC = () => {
     const [hoverIntensity] = useState(0.2);
     const [enableHover] = useState(true);
 
-    const scrollToSection = (id: string) => {
-        const element = document.getElementById(id)
-        if(element) {
-            element.scrollIntoView({behavior: 'smooth'})
-        }
-    }
+
 
 
     const items = [
-        { icon: <RiHome2Line size={22} style={{ color: "white" }} />, label: 'Home', onClick: () => scrollToSection('home')},
-        { icon: <IoSchoolOutline size={23} style={{ color: "white" }} />, label: 'About', onClick: () => scrollToSection('experience')},
-        { icon: <GoProjectSymlink size={22} style={{ color: "white" }} />, label: 'Project', onClick: () => scrollToSection('project')},
-        { icon: <RiContactsLine size={20} style={{ color: "white" }} />, label: 'Contact Me', onClick: () => scrollToSection('footer')},
+        { icon: <RiHome2Line size={22} style={{ color: "white" }} />, label: 'Home', href: '/'},
+        { icon: <IoSchoolOutline size={23} style={{ color: "white" }} />, label: 'About', href: '/about'},
+        { icon: <GoProjectSymlink size={22} style={{ color: "white" }} />, label: 'Project', href: '/project'},
+        { icon: <RiContactsLine size={20} style={{ color: "white" }} />, label: 'Contact Me', href: '/'},
     ];
 
     const socialLinks = [
@@ -110,7 +105,6 @@ const Hero: React.FC = () => {
                     panelHeight={68}
                     baseItemSize={50}
                     className="z-30"
-
                 />
             </div>
             <div className="mt-16 text-white">
@@ -240,10 +234,8 @@ const Hero: React.FC = () => {
                                         key={index}
                                         href={link.href}
                                         icon={link.icon}
-
                                     />
                                 ))}
-
                             </div>
                         </div>
                     </div>
