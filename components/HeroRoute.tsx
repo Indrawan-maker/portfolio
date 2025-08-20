@@ -25,12 +25,12 @@ export default function HeroRoute() {
                                 />
                             <div className='space-y-2 text-white w-80 md:w-300'>
                                 <h1 className='text-center text-white font-semibold text-3xl md:text-6xl tracking-tight'>
-                                    Hi I'm, Muhammad Indrawan.
+                                    Hi I&apos;m, Muhammad Indrawan.
                                 </h1>
                                 <div className='items-center justify-center mt-8'>
                                 <p className='text-3xl text-center font-extralight'>
                                     A full-stack developer with experience in web and mobile development. I enjoy working across all stages of a project,
-                                    from concept to delivery, and I'm always looking for ways to improve both my technical skills and the user experience.
+                                    from concept to delivery, and I&apos;m always looking for ways to improve both my technical skills and the user experience.
                                 </p>
                                 </div>
                                 </div>
