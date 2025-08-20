@@ -9,7 +9,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 export const TechStack = () => {
     return (
         <>
-        <div className=" flex justify-center items-center mt-26 text-sm">
+        <div className=" flex justify-center items-center mt-26 text-sm" translate="no">
         <div className="w-160 h-60">
         <h1 className="flex mb-4 text-gray-300 text-xl tracking-widest">Tech Stack</h1>
             <ul className="grid grid-cols-2 grid-rows-3 md:flex md:flex-wrap gap-6 md:gap-8 justify-center items-center mt-8">

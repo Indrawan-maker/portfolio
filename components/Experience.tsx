@@ -13,7 +13,7 @@ export const Experience = () => {
 
 
     return (
-        <div className="flex justify-center items-center mt-32">
+        <div className="flex justify-center items-center mt-32" translate="no">
         <section className="justify-center w-120 md:w-160" id="experience">
             <h1 className="mb-4 text-gray-300 text-xl tracking-widest">Experience</h1>
             <div className="flex justify-around cursor-pointer mb-3 bg-white rounded-md h-8 items-center ">

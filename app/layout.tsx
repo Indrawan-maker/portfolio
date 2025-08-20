@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Fullstack Developer",
   description: "portfolio",
+  other: {
+    google: "notranslate",
+  }
 };
 
 export default function RootLayout({
@@ -21,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" translate="no">
       <body
-        className={`${inter} antialiased`}
+        className={`${inter.className} antialiased`}
       >
         {children}
       </body>

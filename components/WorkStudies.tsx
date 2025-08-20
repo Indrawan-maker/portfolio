@@ -1,7 +1,7 @@
 import Icon1 from "./images/uinsi-icon.webp";
 import Image from 'next/image';
 
-<div className="flex h-26 border-2 rounded-xl border-white">
+<div className="flex h-26 border-2 rounded-xl border-white" translate="no">
                 <div className="flex">
                 <ul>
                     <li className="relative grid justify-center gap-4 p-6">

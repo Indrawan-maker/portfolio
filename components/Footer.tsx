@@ -1,6 +1,7 @@
 export const Footer = () => {
     return (
         <section className="grid md:flex justify-center items-center" 
+        translate="no"
         id="footer">
             <div className=" mt-140 md:mt-46 justify-center items-center">
                 <div className="flex justify-center items-center z-20">

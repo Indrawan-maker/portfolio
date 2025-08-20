@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <section className='' id='home'>
+        <section className='' id='home' translate="no">
             <div className='z-30 flex justify-center items-center pt-4 px-4 fixed bottom-0 left-1/2 -translate-x-1/2'>
                 <Dock
                     items={items}
