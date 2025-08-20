@@ -1,7 +1,29 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img src="https://i.imgur.com/AZ2iWek.png" alt="Project logo"></a>
-</p>
-<h3 align="center">portfolio</h3>
+# Portfolio
 
-<p>i'm done with this</p>
+  sebuah portfolio project untuk memamerkan project project saya
+
+## 📦 Instalasi
+
+```bash
+# Clone repo
+git clone https://github.com/indrawan-maker/portfolio-nextjs.git
+
+# Masuk ke folder
+cd portfolio-nextjs
+
+# Install dependencies
+npm install
+
+# Jalankan app
+npm run dev
+```
+
+
+## 🛠️ Teknologi
+
+  - Next.JS
+  - TypeScript
+  - React
+  - Tailwind CSS
+  - ReactBits
+  - React icon
