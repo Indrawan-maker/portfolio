@@ -21,7 +21,7 @@ export const Experience = () => {
                     <button className="">Studies</button>
                 </div>
             </div>
-            <div className="flex h-38 md:h-29 border-2 rounded-xl border-white">
+            <div className="flex md:w-full h-38 md:h-29 border-2 rounded-xl border-white">
                 <div className="flex px-6 md:p-0 gap-1 md:gap-0">
                 <ul>
                     <li className="relative grid justify-center gap-2 p-1 py-13 md:p-7 md:py-full">
@@ -32,7 +32,7 @@ export const Experience = () => {
                             <Image
                                 src={Icon1}
                                 alt="uinsi"
-                                className="rounded-full w-20 h-8 md:w-12 md:h-12"
+                                className="rounded-full w-28 h-8 md:w-12 md:h-12"
                             />
                         </div>
                     </li>

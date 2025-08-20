@@ -199,7 +199,7 @@ const Hero: React.FC = () => {
                                     FULLSTACK
                                 </h1>
                                 <div className='flex items-center justify-center gap-1 md:gap-4'>
-                                    <h1 className='text-center text-white font-semibold text-3xl md:text-8xl tracking-tight'>
+                                    <h1 className='text-center text-white font-semibold text-2xl md:text-8xl tracking-tight'>
                                         DEVELOPER
                                     </h1>
                                     <motion.button
