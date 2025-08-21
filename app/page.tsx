@@ -37,13 +37,13 @@ export default function Home() {
     if (introSeen) return;
 
     if (index < greetings.length) {
-      const timer = setTimeout(() => setIndex(index + 1), 1000);
+      const timer = setTimeout(() => setIndex(index + 1), 800);
       return () => clearTimeout(timer);
     } else {
       setTimeout(() => {
         setShowContent(true);
         sessionStorage.setItem("introSeen", "true"); 
-      }, 500);
+      }, 250);
     }
   }, [index, greetings.length, introSeen]);
 
@@ -67,13 +67,18 @@ export default function Home() {
       )}
 
       {showContent && (
-        <div className="max-w-7xl w-full">
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: showContent ? 1 : 0 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        className="max-w-7xl w-full"
+        >
           <Hero />
           <Experience />
           <TechStack />
           <Project />
           <Footer />
-        </div>
+        </motion.div>
       )}
     </main>
   );
