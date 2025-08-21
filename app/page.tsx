@@ -22,20 +22,34 @@ export default function Home() {
 
   const [index, setIndex] = useState(0);
   const [showContent, setShowContent] = useState(false);
+  const [introSeen, setIntroSeen] = useState(false);
 
   useEffect(() => {
+    const seen = sessionStorage.getItem("introSeen");
+    if (seen) {
+      setIntroSeen(true);
+      setShowContent(true);
+      return;
+    }
+  }, []);
+
+  useEffect(() => {
+    if (introSeen) return;
+
     if (index < greetings.length) {
       const timer = setTimeout(() => setIndex(index + 1), 1000);
       return () => clearTimeout(timer);
     } else {
-      setTimeout(() => setShowContent(true), 500); 
+      setTimeout(() => {
+        setShowContent(true);
+        sessionStorage.setItem("introSeen", "true"); 
+      }, 500);
     }
-  }, [index]);
+  }, [index, greetings.length, introSeen]);
 
   return (
     <main className="relative bg-[#020103] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      {/* Overlay Intro */}
-      {!showContent && (
+      {!introSeen && !showContent && (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
           <AnimatePresence mode="wait">
             <motion.h1
