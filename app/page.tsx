@@ -37,13 +37,13 @@ export default function Home() {
     if (introSeen) return;
 
     if (index < greetings.length) {
-      const timer = setTimeout(() => setIndex(index + 1), 800);
+      const timer = setTimeout(() => setIndex(index + 1), 900);
       return () => clearTimeout(timer);
     } else {
       setTimeout(() => {
         setShowContent(true);
         sessionStorage.setItem("introSeen", "true"); 
-      }, 250);
+      }, 300);
     }
   }, [index, greetings.length, introSeen]);
 
