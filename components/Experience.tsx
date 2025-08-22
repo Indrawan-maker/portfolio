@@ -21,18 +21,18 @@ export const Experience = () => {
                     <button className="">Studies</button>
                 </div>
             </div>
-            <div className="flex md:w-full h-38 md:h-29 border-2 rounded-xl border-white">
+            <div className="flex md:w-full md:h-29  border-2 rounded-xl border-white">
                 <div className="flex px-6 md:p-0 gap-1 md:gap-0">
-                <ul>
-                    <li className="relative grid justify-center gap-2 p-1 py-13 md:p-7 md:py-full">
+                <ul className="flex justify-center items-center mr-4">
+                    <li className="relative grid justify-center gap-2 md:p-7">
                         <div className="absolute inset-0 flex justify-center">
                             <div className="w-[1px] bg-white"></div>
                         </div>
-                        <div className="relative z-10 bg-white rounded-full p-1">
+                        <div className="relative z-10 bg-white rounded-full p-2 md:p-1">
                             <Image
                                 src={Icon1}
                                 alt="uinsi"
-                                className="rounded-full w-28 h-8 md:w-12 md:h-12"
+                                className="rounded-full w-full h-full md:bg-white md:w-12 md:h-12"
                             />
                         </div>
                     </li>
