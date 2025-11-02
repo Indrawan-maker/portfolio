@@ -5,6 +5,9 @@ import { SiNextdotjs } from "react-icons/si";
 import { BiLogoNodejs } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiJsonwebtokens } from "react-icons/si";
 
 export const TechStack = () => {
     return (
@@ -25,6 +28,12 @@ export const TechStack = () => {
                 <li className="flex items-center justify-center -ml-6 md:ml-0 gap-1 md:gap-3 text-gray-300"><BiLogoNodejs className="w-6 h-6 md:w-10 md:h-10 text-white"/> NodeJS
                 </li>
                 <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><FaGitAlt className="w-6 h-6 md:w-10 md:h-10 text-white"/> Git
+                </li>
+                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><SiMongodb className="w-6 h-6 md:w-10 md:h-10 text-white"/> MongoDB
+                </li>
+                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><SiExpress className="w-6 h-6 md:w-10 md:h-10 text-white"/> Express
+                </li>
+                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><SiJsonwebtokens  className="w-5 h-5 md:w-10 md:h-10 text-white" style={{ strokeWidth: '0.1px' }}/> JWT
                 </li>
                 {/* mr auto harus di bagian akhir agar terdorong sisanya */}
                 <li className="flex gap-2 md:gap-3 mr-auto ml-6 md:ml-0 items-center text-gray-300"><RiTailwindCssFill className="w-6 h-6 md:w-10 md:h-10 text-white"/> Tailwind CSS

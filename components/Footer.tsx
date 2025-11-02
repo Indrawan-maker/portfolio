@@ -1,9 +1,13 @@
+
+import Link from 'next/link'
+
+
 export const Footer = () => {
     return (
-        <section className="grid md:flex justify-center items-center" 
+        <footer className="grid md:flex justify-center items-center mt-auto" 
         translate="no"
         id="footer">
-            <div className=" mt-140 md:mt-46 justify-center items-center">
+            <div className=" mt-24 md:mt-46 justify-center items-center">
                 <div className="flex justify-center items-center z-20">
 
                 <section className="w-80 h-90 md:w-160 md:h-46 rounded-xl border-1 border-white">
@@ -17,9 +21,9 @@ export const Footer = () => {
                             <h5 className="text-neutral-300 mb-4">Explore</h5>
                             <div className="text-neutral-500">
                                 <ul>
-                                    <li><a className="cursor-pointer hover:text-white">Home</a></li>
-                                    <li><a className="cursor-pointer hover:text-white">About</a></li>
-                                    <li><a className="cursor-pointer hover:text-white">Project</a></li>
+                                    <li><Link  href="/" className="cursor-pointer hover:text-white">Home</Link></li>
+                                    <li><Link  href="/about" className="cursor-pointer hover:text-white">About</Link></li>
+                                    <li><Link  href="/project" className="cursor-pointer hover:text-white">Project</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -27,10 +31,10 @@ export const Footer = () => {
                             <h5 className="text-neutral-300 mb-4">Let&apos;s Connect</h5>
                             <div className="text-neutral-500">
                                 <ul>
-                                    <li><a href="" className="cursor-pointer hover:text-white">Email</a></li>
-                                    <li><a className="cursor-pointer hover:text-white">Linkedin</a></li>
-                                    <li><a className="cursor-pointer hover:text-white">Github</a></li>
-                                    <li><a className="cursor-pointer hover:text-white">Instagram</a></li>
+                                    <li><Link href="mailto:indrawanismail0@gmail.com" className="cursor-pointer hover:text-white">Email</Link></li>
+                                    <li><Link href="https://www.linkedin.com/in/muhammad-indrawan-ismail-1baa13326/"className="cursor-pointer hover:text-white">Linkedin</Link></li>
+                                    <li><Link href="https://github.com/Indrawan-maker"className="cursor-pointer hover:text-white">Github</Link></li>
+                                    <li><Link href="https://www.instagram.com/troy_sakana/"className="cursor-pointer hover:text-white">Instagram</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -38,10 +42,10 @@ export const Footer = () => {
                 </section>
                 </div>
                 <div className="text-neutral-700 flex justify-between h-44 w-80 md:w-160 py-4 m-auto md:mr-0">
-                    <h6>© 2024</h6>
+                    <h6>© 2025</h6>
                     <h6>Muhammad Indrawan.</h6>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }

@@ -20,6 +20,7 @@ import Image from 'next/image';
 import profile from './images/profile1.webp'
 import profileHover from './images/profile2.webp'
 import FuzzyText from './ui/FuzzyText';
+import Link from 'next/link'
 
 const Hero: React.FC = () => {
     const [isProfileHovered, setIsProfileHovered] = useState(false);
@@ -91,9 +92,9 @@ const Hero: React.FC = () => {
             </motion.button>
         );
         return (
-            <a href={href} target="_blank" rel="noopener noreferrer">
+            <Link href={href} target="_blank" rel="noopener noreferrer">
                 {buttonContent}
-            </a>
+            </Link>
         );
     };
 
