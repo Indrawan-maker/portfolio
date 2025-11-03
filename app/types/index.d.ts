@@ -14,3 +14,12 @@ export type cardProps = {
     projectLink: string
     techStack : string[]
 }
+
+
+export type experienceProps = {
+    imageProps : StaticImageData
+    dateProps: string
+    titleProps: string
+    descProps: string
+}
+

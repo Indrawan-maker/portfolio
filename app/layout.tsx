@@ -8,12 +8,17 @@ const inter = Inter({
 
 
 
+
+
 export const metadata: Metadata = {
-  title: "Fullstack Developer",
+  title: "Muhammad Indrawan",
   description: "portfolio",
+  icons: {
+    icon: "/smartWeb.svg",
+  },
   other: {
     google: "notranslate",
-  }
+  },
 };
 
 export default function RootLayout({

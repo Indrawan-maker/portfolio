@@ -12,35 +12,73 @@ import { SiJsonwebtokens } from "react-icons/si";
 export const TechStack = () => {
     return (
         <>
-        <div className=" flex justify-center items-center mt-26 text-sm" translate="no">
-        <div className="w-160 h-60">
-        <h1 className="flex mb-4 text-gray-300 text-xl tracking-widest">Tech Stack</h1>
-            <ul className="grid grid-cols-2 grid-rows-3 md:flex md:flex-wrap gap-6 md:gap-8 justify-center items-center mt-8">
-                
-                <li className="flex items-center justify-center -ml-4 gap-1 md:gap-3 text-gray-300"><IoLogoJavascript className="w-6 h-6 md:w-8 md:h-8 text-white" /> Javascript
-                </li>
-                <li className="flex items-center justify-center  -ml-16 md:ml-0 gap-1 md:gap-3 text-gray-300"><BiLogoTypescript className="w-6 h-6 md:w-9 md:h-9 text-white"/> Typeccript
-                </li>
-                <li className="flex items-center justify-center  -ml-9 md:ml-0 gap-1 md:gap-3 text-gray-300"><BiLogoReact className="w-6 h-6 md:w-9 md:h-9 text-white"/> React
-                </li>
-                <li className="flex items-center justify-center  -ml-22 md:ml-0 gap-1 md:gap-3 text-gray-300"><SiNextdotjs className="w-6 h-6 md:w-8 md:h-8 text-white"/> NextJS
-                </li>
-                <li className="flex items-center justify-center -ml-6 md:ml-0 gap-1 md:gap-3 text-gray-300"><BiLogoNodejs className="w-6 h-6 md:w-10 md:h-10 text-white"/> NodeJS
-                </li>
-                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><FaGitAlt className="w-6 h-6 md:w-10 md:h-10 text-white"/> Git
-                </li>
-                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><SiMongodb className="w-6 h-6 md:w-10 md:h-10 text-white"/> MongoDB
-                </li>
-                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><SiExpress className="w-6 h-6 md:w-10 md:h-10 text-white"/> Express
-                </li>
-                <li className="flex gap-2 md:gap-3 -ml-2 items-center text-gray-300"><SiJsonwebtokens  className="w-5 h-5 md:w-10 md:h-10 text-white" style={{ strokeWidth: '0.1px' }}/> JWT
-                </li>
-                {/* mr auto harus di bagian akhir agar terdorong sisanya */}
-                <li className="flex gap-2 md:gap-3 mr-auto ml-6 md:ml-0 items-center text-gray-300"><RiTailwindCssFill className="w-6 h-6 md:w-10 md:h-10 text-white"/> Tailwind CSS
-                </li>
-            </ul>
-        </div>
-        </div>
+            <div className="flex justify-center items-center mt-26 text-sm" translate="no">
+                <div className="w-160 h-60">
+                    <h1 className="flex mb-4 text-gray-300 text-xl tracking-widest">Tech Stack</h1>
+<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center mt-8 text-gray-300">
+  <li>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <IoLogoJavascript className="w-6 h-6 md:w-8 md:h-8 text-white" /> Javascript
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <BiLogoTypescript className="w-6 h-6 md:w-8 md:h-8 text-white" /> TypeScript
+    </a>
+  </li>
+
+  <li>
+    <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <BiLogoReact className="w-6 h-6 md:w-8 md:h-8 text-white" /> React
+    </a>
+  </li>
+
+  <li>
+    <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <SiNextdotjs className="w-6 h-6 md:w-8 md:h-8 text-white" /> NextJS
+    </a>
+  </li>
+
+  <li>
+    <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <BiLogoNodejs className="w-6 h-6 md:w-8 md:h-8 text-white" /> NodeJS
+    </a>
+  </li>
+
+  <li>
+    <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <FaGitAlt className="w-6 h-6 md:w-8 md:h-8 text-white" /> Git
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <SiMongodb className="w-6 h-6 md:w-8 md:h-8 text-white" /> MongoDB
+    </a>
+  </li>
+
+  <li>
+    <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <SiExpress className="w-6 h-6 md:w-8 md:h-8 text-white" /> Express
+    </a>
+  </li>
+
+  <li>
+    <a href="https://jwt.io/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <SiJsonwebtokens className="w-6 h-6 md:w-8 md:h-8 text-white" /> JWT
+    </a>
+  </li>
+
+  <li>
+    <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+      <RiTailwindCssFill className="w-6 h-6 md:w-8 md:h-8 text-white" /> Tailwind CSS
+    </a>
+  </li>
+</ul>
+
+                </div>
+            </div>
         </>
     )
 }

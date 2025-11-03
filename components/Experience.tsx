@@ -1,12 +1,22 @@
 "use client"
 
-import Icon1 from "./images/uinsi-icon.webp";
-import Image from 'next/image';
-
+import { WorkStudies } from "./WorkStudies";
+import { useState } from 'react'
 
 
 
 export const Experience = () => {
+    const [isButtonClick, setIsButtonClick] = useState('work')
+
+    const WorkWhenClick = {
+        backgroundColor: isButtonClick === 'work' ? 'white' : 'black',
+        color: isButtonClick === 'work' ? 'black' : 'white'
+    }
+    const StudiesWhenClick = {
+        backgroundColor: isButtonClick === 'studies' ? 'white' : 'black',
+        color: isButtonClick === 'studies' ? 'black' : 'white'
+    }
+
 
 
 
@@ -14,37 +24,31 @@ export const Experience = () => {
 
     return (
         <div className="flex justify-center items-center mt-32" translate="no">
-        <section className="justify-center w-120 md:w-160" id="experience">
-            <h1 className="mb-4 text-gray-300 text-xl tracking-widest">Experience</h1>
-            <div className="flex justify-around cursor-pointer mb-3 bg-white rounded-md h-8 items-center ">
-                <div>
-                    <button className="">Studies</button>
-                </div>
-            </div>
-            <div className="flex md:w-full md:h-29  border-2 rounded-xl border-white">
-                <div className="flex px-6 md:p-0 gap-1 md:gap-0">
-                <ul className="flex justify-center items-center mr-4">
-                    <li className="relative grid justify-center gap-2 md:p-7">
-                        <div className="absolute inset-0 flex justify-center">
-                            <div className="w-[1px] bg-white"></div>
+            <section className="justify-center w-90 md:w-160" id="experience">
+                <h1 className="mb-4 text-gray-300 text-xl tracking-widest">Experience</h1>
+
+                <section className="flex">
+                    <div className="flex justify-around cursor-pointer mb-3 rounded-md h-8 items-center w-80" style={WorkWhenClick}
+                    onClick={() => setIsButtonClick('work')}
+                    >
+                        <div className="cursor-pointer">
+                            <button
+                                className="">Work</button>
+
                         </div>
-                        <div className="relative z-10 bg-white rounded-full p-2 md:p-1">
-                            <Image
-                                src={Icon1}
-                                alt="uinsi"
-                                className="rounded-full w-full h-full md:bg-white md:w-12 md:h-12"
-                            />
+                    </div>
+                    <div className="flex justify-around cursor-pointer mb-3 rounded-md h-8 items-center w-80" style={StudiesWhenClick}
+                    onClick={() => setIsButtonClick('studies')}
+                    >
+                        <div className="">
+                            <button
+                                className="">Studies</button>
+
                         </div>
-                    </li>
-                </ul>
-                <div className="grid p-2 md:p-3 items-center justify-center">
-                    <p className="text-gray-400 text-sm ">August 2024 - August 2028</p>
-                    <h1 className="text-white font-bold">Universitas Islam Negeri Sultan Aji Muhammad Idris Samarinda</h1>
-                    <p className="text-gray-400 text-sm">Undergraduate in Information System</p>
-                </div>
-                </div>
-            </div>
-        </section>
+                    </div>
+                </section>
+                <WorkStudies setActiveTab={isButtonClick} />
+            </section>
         </div>
     )
 }

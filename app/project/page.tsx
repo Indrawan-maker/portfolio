@@ -35,12 +35,14 @@ export default function ProjectRoute() {
                                         projectLink='https://portfolio-sigma-virid-u677bz60w1.vercel.app/'
                                         techStack={['tailwindCSS', 'nextJS']}
                                     />
+                                    {/* pemisah antar project */}
                                     <Card projectTitle='Ceritain Alumni'
                                         projectDescription='a place for you to tell stories and share experiences about your college days.'
                                         projectImage={projectImage3}
                                         projectLink='https://cerita-alumnii.vercel.app/'
-                                        techStack={['tailwindCSS', 'express', 'mongodb']}
+                                        techStack={['vite + react', 'express', 'mongodb']}
                                     />
+                                    {/* pemisah antar project */}
                                     <Card projectTitle='HMPS SI'
                                         projectDescription='is an information center where you can find things related to your field of study.'
                                         projectImage={projectImage4}
