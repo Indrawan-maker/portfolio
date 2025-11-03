@@ -11,7 +11,7 @@ export const Studies = ({ imageProps, dateProps, titleProps, descProps }: experi
                             <div className="absolute inset-0 flex justify-center">
                                 <div className="w-[1px] bg-white"></div>
                             </div>
-                            <div className="relative z-10 bg-white rounded-full p-2 md:p-1 w-16" >
+                            <div className="relative z-10 bg-white rounded-full p-3 md:p-1 w-12" >
                                 <Image
                                     src={imageProps}
                                     alt="uinsi"

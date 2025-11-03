@@ -15,7 +15,7 @@ export default function About() {
     <div className="max-w-7xl w-full mt-28">
         <TechStack />
     </div>
-    <div className="-mt-80">
+    <div className="-mt-80 md:-mt-24">
         <Footer />
     </div>
     </main>
