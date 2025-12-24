@@ -19,6 +19,7 @@ npm run dev
 ```
 
 
+
 ## 🛠️ Teknologi
 
   - Next.JS

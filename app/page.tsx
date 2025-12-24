@@ -37,13 +37,13 @@ export default function Home() {
     if (introSeen) return;
 
     if (index < greetings.length) {
-      const timer = setTimeout(() => setIndex(index + 1), 900);
+      const timer = setTimeout(() => setIndex(index + 1), 400);
       return () => clearTimeout(timer);
     } else {
       setTimeout(() => {
         setShowContent(true);
         sessionStorage.setItem("introSeen", "true"); 
-      }, 300);
+      }, 200);
     }
   }, [index, greetings.length, introSeen]);
 
@@ -52,16 +52,16 @@ export default function Home() {
       {!introSeen && !showContent && (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
           <AnimatePresence mode="wait">
-            <motion.h1
+            <motion.p
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: 0 }}
+              animate={{ opacity: 9, y: 0 }}
+              exit={{ opacity: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
               className="text-5xl font-bold text-white"
             >
               {greetings[index]}
-            </motion.h1>
+            </motion.p>
           </AnimatePresence>
         </div>
       )}
