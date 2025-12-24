@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import  SmoothScroll  from "@/lib/SmoothScroll"
+import CustomScrollbar from '@/lib/CustomScrollbar'
 import "./globals.css";
 
 const inter = Inter({
@@ -28,11 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" translate="no">
+    <html lang="en" translate="no"  className="[scrollbar-color:#374FF_transparent] [scrollbar-width:thin]">
       <body
         className={`${inter.className} antialiased`}
       >
       <SmoothScroll />
+      <CustomScrollbar />
         {children}
       </body>
     </html>

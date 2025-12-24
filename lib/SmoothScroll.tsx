@@ -1,7 +1,7 @@
+// components/SmoothScroll.tsx
 'use client'
 import { useEffect } from 'react'
 import Lenis from 'lenis'
-import 'lenis/dist/lenis.css' // Import CSS nya juga
 
 export default function SmoothScroll() {
   useEffect(() => {
@@ -17,7 +17,6 @@ export default function SmoothScroll() {
 
     requestAnimationFrame(raf)
 
-    // Cleanup saat component unmount
     return () => {
       lenis.destroy()
     }

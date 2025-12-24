@@ -28,3 +28,4 @@ npm run dev
   - ReactBits
   - React icon
   - Lenis
+  - Overlays Scrollbar
