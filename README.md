@@ -27,3 +27,4 @@ npm run dev
   - Tailwind CSS
   - ReactBits
   - React icon
+  - Lenis
