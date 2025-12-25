@@ -1,5 +1,5 @@
 import Icon1 from "./images/uinsi-icon.webp";
-import Icon2 from "./images/free.jpg";
+import Icon2 from "./images/semar.png";
 import { Studies } from '@/components/ui/Studies';
 
 
@@ -14,7 +14,7 @@ export const WorkStudies = ({ setActiveTab }: { setActiveTab: string }) => {
                 {
                     setActiveTab === 'work' ?
                         <>
-                            <Studies imageProps={Icon2} dateProps="2025 - now" titleProps="Freelance" descProps="Working on freelance projects focusing on web development" />
+                            <Studies imageProps={Icon2} dateProps="2025 - now" titleProps="SEMAR" descProps="Working on freelance projects focusing on web development" />
                         </>
                         :
                         <>

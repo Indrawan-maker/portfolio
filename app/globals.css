@@ -1,21 +1,41 @@
 @import "tailwindcss";
 
 
+/* globals.css */
+/* globals.css */
+
+/* Custom scrollbar tanpa arrow */
 ::-webkit-scrollbar {
-  width: 24px !important;
-  background-color: transparent;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #A374FF;
+  background: #A374FF;
   border-radius: 10px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5fd9;
+}
+
+/* Hide scrollbar buttons/arrows */
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Firefox */
 * {
-  scrollbar-width: auto;
+  scrollbar-width: thin;
   scrollbar-color: #A374FF transparent;
+}
+
+html, body {
+  background: #020103;
+  overflow-x: hidden;
 }

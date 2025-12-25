@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
@@ -51,27 +51,18 @@ export default function Home() {
     <main className="relative bg-[#020103] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       {!introSeen && !showContent && (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
-          <AnimatePresence mode="wait">
-            <motion.p
-              key={index}
-              initial={{ opacity: 0, y: 0 }}
-              animate={{ opacity: 9, y: 0 }}
-              exit={{ opacity: 0, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className="text-5xl font-bold text-white"
-            >
-              {greetings[index]}
-            </motion.p>
-          </AnimatePresence>
+          <p key={index} className="text-5xl font-bold text-white">
+            {greetings[index]}
+          </p>
         </div>
       )}
 
       {showContent && (
         <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: showContent ? 1 : 0 }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
-        className="max-w-7xl w-full"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
+          className="max-w-7xl w-full"
         >
           <Hero />
           <Experience />

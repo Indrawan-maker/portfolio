@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import  SmoothScroll  from "@/lib/SmoothScroll"
-import CustomScrollbar from '@/lib/CustomScrollbar'
 import "./globals.css";
 
 const inter = Inter({
@@ -34,7 +33,6 @@ export default function RootLayout({
         className={`${inter.className} antialiased`}
       >
       <SmoothScroll />
-      <CustomScrollbar />
         {children}
       </body>
     </html>
