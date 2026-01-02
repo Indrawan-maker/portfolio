@@ -1,0 +1,24 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap location - Google bakal baca ini
+Sitemap: https://indrawan-id.vercel.app/sitemap.xml
+
+# Crawl-delay untuk bot yang sopan (optional)
+Crawl-delay: 1
+
+# Block specific paths if needed (uncomment jika perlu)
+# Disallow: /api/
+# Disallow: /admin/
+# Disallow: /_next/static/
+
+# Google bot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing bot specific rules  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

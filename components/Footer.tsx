@@ -14,7 +14,9 @@ export const Footer = () => {
                         <div className="flex justify-between px-12 md:px-6 py-6">
                             <div className="-ml-8 md:ml-0 -mt-9 md:mb-0">
                                 <h1 className="text-white text-4xl font-bold mt-12">
-                                    Muhammad <br />Indrawan.
+                                    <strong>
+                                        Muhammad <br />Indrawan
+                                        </strong>
                                 </h1>
                             </div>
 
@@ -91,8 +93,11 @@ export const Footer = () => {
                 </div>
 
                 <div className="text-neutral-700 flex justify-between h-44 w-80 md:w-160 py-4 m-auto md:mr-0">
-                    <h6>© 2025</h6>
-                    <h6>Muhammad Indrawan.</h6>
+                    <h6>© {new Date().getFullYear()}</h6>
+                    <h1> <strong>
+                        Muhammad Indrawan.
+                        </strong>
+                        </h1>
                 </div>
             </div>
         </footer>

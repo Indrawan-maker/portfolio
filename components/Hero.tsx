@@ -19,15 +19,10 @@ import Dock from '../lib/Dock';
 import Image from 'next/image';
 import profile from './images/profile1.webp'
 import profileHover from './images/profile2.webp'
-import FuzzyText from './ui/FuzzyText';
 import Link from 'next/link'
 
 const Hero: React.FC = () => {
     const [isProfileHovered, setIsProfileHovered] = useState(false);
-    const [hoverIntensity] = useState(0.2);
-    const [enableHover] = useState(true);
-
-
 
 
     const items = [
@@ -100,6 +95,32 @@ const Hero: React.FC = () => {
 
     return (
         <section className='' id='home' translate="no">
+            {/* SEO CONTENT - Hidden dari user tapi Google baca */}
+            <div className="sr-only">
+                <h1>Indrawan — Muhammad Indrawan | Fullstack Web Developer Indonesia</h1>
+                <p>
+                    <strong>Indrawan</strong> (Muhammad Indrawan) adalah fullstack web developer 
+                    profesional yang berbasis di Indonesia, tepatnya di Balikpapan, Kalimantan Timur. 
+                </p>
+                <p>
+                    <strong>Indrawan</strong> memiliki keahlian dalam membangun website modern 
+                    menggunakan teknologi terkini seperti Next.js, React, TypeScript, dan Tailwind CSS.
+                </p>
+                <p>
+                    Sebagai seorang fullstack developer, <strong>Indrawan</strong> dapat mengerjakan 
+                    project dari frontend hingga backend, mencakup pembuatan landing page, company profile, 
+                    e-commerce, dashboard, dan sistem web custom.
+                </p>
+                <p>
+                    Portfolio <strong>Muhammad Indrawan</strong> menampilkan berbagai project website 
+                    berkualitas tinggi yang telah dikerjakan untuk klien dari berbagai industri.
+                </p>
+                <p>
+                    Hubungi <strong>Indrawan</strong> untuk konsultasi pembuatan website profesional 
+                    yang cepat, modern, dan SEO-friendly untuk bisnis Anda.
+                </p>
+            </div>
+
             <div className='z-30 flex justify-center items-center pt-4 px-4 fixed bottom-0 left-1/2 -translate-x-1/2'>
                 <Dock
                     items={items}
@@ -122,7 +143,7 @@ const Hero: React.FC = () => {
                     </div>
                     <div className='relative z-20 flex flex-col items-center justify-center h-[600px]'>
                         <div className='absolute z-10 text-center'>
-                            <div className="flex justify-center items-center gap-1 ml-14 md:ml-28">
+                            <div className="flex justify-center items-center gap-1 ml-8 md:ml-12">
                                 <div>
                                     <motion.button
                                         whileHover={{ scale: 1.2, rotate: -16, transition: { duration: 0.6 } }}
@@ -130,6 +151,7 @@ const Hero: React.FC = () => {
                                         onMouseEnter={() => setIsProfileHovered(true)}
                                         onMouseLeave={() => setIsProfileHovered(false)}
                                         className="flex items-center justify-center border rounded-full p-0 bg-transparent w-20 h-20"
+                                        aria-label="Muhammad Indrawan Profile"
                                     >
                                         <div className="w-full h-full rounded-full overflow-hidden relative">
                                             <GlareHover
@@ -154,7 +176,7 @@ const Hero: React.FC = () => {
                                                     transition={{ duration: 0.3 }}
                                                     style={{ position: 'absolute' }}
                                                 >
-                                                    <Image src={profile} alt="profile" />
+                                                    <Image src={profile} alt="Muhammad Indrawan - Fullstack Web Developer" />
                                                 </motion.div>
 
                                                 <motion.div
@@ -162,70 +184,66 @@ const Hero: React.FC = () => {
                                                     transition={{ duration: 0.3 }}
                                                     style={{ position: 'absolute' }}
                                                 >
-                                                    <Image src={profileHover} alt="profile hover" />
+                                                    <Image src={profileHover} alt="Indrawan Developer Portfolio" />
                                                 </motion.div>
                                             </GlareHover>
                                         </div>
                                     </motion.button>
                                 </div>
 
-                                <div className='justify-center items-center ml-1'>
-                                    <div className='flex justify-center items-center -ml-13 mb-1'>
-                                        <h2 className='tracking-tight'>
-                                    <FuzzyText
-                                        baseIntensity={0}
-                                        hoverIntensity={hoverIntensity}
-                                        enableHover={enableHover}
-                                        
-                                    >
-                                            Muhammad Indrawan.
-                                    </FuzzyText>
+                                <div className='justify-center items-center ml-2'>
+                                    <div className='flex justify-center items-center -ml-18 mb-1'>
+                                        <h2 className='tracking-tight' itemProp="name">
+                                            Indrawan
                                         </h2>
-                                        </div>
+                                    </div>
                                     <div className='flex'>
-                                        <p className='flex tracking-tight text-sm'><Image src={flag} alt="Indonesia flag" className='w-9 h-6' />
+                                        <p className='flex tracking-tight text-sm'>
+                                            <Image src={flag} alt="Indonesia flag" className='w-9 h-6' />
                                             Based in Indonesia
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div className='space-y-2'>
-                                <h1 className='text-center text-white font-semibold text-5xl md:text-8xl tracking-tight'>
+                                <h3 className='text-center text-white font-semibold text-5xl md:text-8xl tracking-tight'>
                                     FULLSTACK
-                                </h1>
+                                </h3>
                                 <div className='flex items-center justify-center gap-1 md:gap-4'>
-                                    <h1 className='text-center text-white font-semibold text-2xl md:text-8xl tracking-tight'>
+                                    <h3 className='text-center text-white font-semibold text-2xl md:text-8xl tracking-tight'>
                                         DEVELOPER
-                                    </h1>
-                                    <motion.button
-                                        whileHover={{ scale: 1.1, transition: { duration: 0.7 } }}
-                                        whileTap={{ scale: 1.4 }}
-                                        className='flex items-center justify-center gap-2 cursor-pointer border rounded-full h-10 w-36 ml-4'
-                                        aria-label="Contact me button"
-                                    >
-                                        <div className="w-full h-full rounded-full overflow-hidden">
-                                            <GlareHover
-                                                glareColor="#ffffff"
-                                                glareOpacity={0.3}
-                                                glareAngle={-30}
-                                                glareSize={500}
-                                                transitionDuration={800}
-                                                playOnce={false}
-                                                style={{
-                                                    width: '100%',
-                                                    height: '100%',
-                                                    borderRadius: '9999px',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    backgroundColor: 'transparent',
-                                                }}
-                                            >
-                                                <LuSend className='mr-2' />
-                                                <p className='font-bold'>Contact me</p>
-                                            </GlareHover>
-                                        </div>
-                                    </motion.button>
+                                    </h3>
+                                    <Link href="mailto:indrawanismail0@gmail.com">
+                                        <motion.button
+                                            whileHover={{ scale: 1.1, transition: { duration: 0.7 } }}
+                                            whileTap={{ scale: 1.4 }}
+                                            className='flex items-center justify-center gap-2 cursor-pointer border rounded-full h-10 w-36 ml-4'
+                                            aria-label="Contact Indrawan - Web Developer"
+                                        >
+                                            <div className="w-full h-full rounded-full overflow-hidden">
+                                                <GlareHover
+                                                    glareColor="#ffffff"
+                                                    glareOpacity={0.3}
+                                                    glareAngle={-30}
+                                                    glareSize={500}
+                                                    transitionDuration={800}
+                                                    playOnce={false}
+                                                    style={{
+                                                        width: '100%',
+                                                        height: '100%',
+                                                        borderRadius: '9999px',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        backgroundColor: 'transparent',
+                                                    }}
+                                                >
+                                                    <LuSend className='mr-2' />
+                                                    <p className='font-bold'>Contact me</p>
+                                                </GlareHover>
+                                            </div>
+                                        </motion.button>
+                                    </Link>
                                 </div>
                             </div>
 
