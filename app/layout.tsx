@@ -3,67 +3,95 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Indrawan | Muhammad Indrawan - Fullstack Web Developer Indonesia",
+  title: "Indrawan | Muhammad Indrawan Ismail | M Indrawan - Fullstack Web Developer Indonesia",
   description:
-    "Indrawan (Muhammad Indrawan) adalah fullstack web developer profesional Indonesia. Spesialis Next.js, React, TypeScript, dan pembuatan website modern untuk bisnis, UMKM, dan startup. Portfolio dan jasa pembuatan website terpercaya.",
+    "Muhammad Indrawan Ismail (Indrawan / M Indrawan) adalah fullstack web developer profesional Indonesia. Spesialis Next.js, React, TypeScript, dan pembuatan website modern untuk bisnis, UMKM, dan startup. Portfolio dan jasa pembuatan website terpercaya.",
   keywords: [
-    "Indrawan",
+    // Primary Keywords - FOKUS NAMA
+    "Muhammad Indrawan Ismail",
     "Muhammad Indrawan",
+    "M Indrawan",
+    "Indrawan",
+    "Indrawan Ismail",
+    
+    // Developer Keywords
+    "Muhammad Indrawan Ismail developer",
+    "Muhammad Indrawan developer",
+    "M Indrawan developer",
     "Indrawan web developer",
     "Indrawan fullstack developer",
     "Indrawan Indonesia",
     "Indrawan portfolio",
     "fullstack developer Indrawan",
-    "web developer Indrawan",
-    "jasa website Indrawan",
-    "Indrawan Next.js",
-    "Muhammad Indrawan developer",
-    "Indrawan programmer",
     "developer Indrawan",
+    "web developer Muhammad Indrawan",
+    "programmer Muhammad Indrawan Ismail",
+    
+    // Service Keywords
+    "jasa website Indrawan",
+    "jasa pembuatan website Muhammad Indrawan",
+    "Indrawan Next.js",
+    "Indrawan React",
+    "Indrawan programmer",
+    "portfolio Muhammad Indrawan Ismail",
+    "portfolio M Indrawan",
+    
+    // Location Keywords
+    "web developer Balikpapan",
+    "fullstack developer Kalimantan Timur",
+    "developer Indonesia",
   ],
   authors: [
     { 
-      name: "Muhammad Indrawan", 
+      name: "Muhammad Indrawan Ismail", 
+      url: "https://indrawan-id.vercel.app" 
+    },
+    { 
+      name: "M Indrawan", 
+      url: "https://indrawan-id.vercel.app" 
+    },
+    { 
+      name: "Indrawan", 
       url: "https://indrawan-id.vercel.app" 
     }
   ],
-  creator: "Muhammad Indrawan (Indrawan)",
-  publisher: "Indrawan",
+  creator: "Muhammad Indrawan Ismail (M Indrawan)",
+  publisher: "Muhammad Indrawan Ismail",
   metadataBase: new URL("https://indrawan-id.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Indrawan — Muhammad Indrawan | Fullstack Web Developer Indonesia",
+    title: "Muhammad Indrawan Ismail | M Indrawan | Indrawan - Fullstack Web Developer Indonesia",
     description:
-      "Website resmi Indrawan (Muhammad Indrawan). Fullstack web developer profesional Indonesia yang membangun website cepat, modern, dan SEO-friendly untuk bisnis, UMKM, dan startup.",
+      "Website resmi Muhammad Indrawan Ismail (M Indrawan). Fullstack web developer profesional Indonesia yang membangun website cepat, modern, dan SEO-friendly untuk bisnis, UMKM, dan startup.",
     url: "https://indrawan-id.vercel.app",
-    siteName: "Indrawan Portfolio",
+    siteName: "Muhammad Indrawan Ismail Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/profile.webp",
         width: 1200,
         height: 630,
-        alt: "Indrawan — Muhammad Indrawan Fullstack Web Developer Portfolio",
+        alt: "Muhammad Indrawan Ismail (M Indrawan) — Fullstack Web Developer Indonesia Portfolio",
       },
     ],
     locale: "id_ID",
     type: "profile",
-    firstName: "Muhammad",
-    lastName: "Indrawan",
+    firstName: "Muhammad Indrawan",
+    lastName: "Ismail",
     username: "indrawan",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Indrawan — Fullstack Web Developer Indonesia",
+    title: "Muhammad Indrawan Ismail | M Indrawan — Fullstack Web Developer Indonesia",
     description:
-      "Muhammad Indrawan (Indrawan) adalah fullstack web developer profesional Indonesia. Spesialis Next.js, React, dan pembuatan website modern.",
-    images: ["/og-image.png"],
+      "Muhammad Indrawan Ismail (M Indrawan / Indrawan) adalah fullstack web developer profesional Indonesia. Spesialis Next.js, React, dan pembuatan website modern.",
+    images: ["/profile.webp"],
     creator: "@troy_sakana",
   },
   icons: {
     icon: "/smartWeb.svg",
-    apple: "/apple-touch-icon.png",
+    apple: "/profile.webp",
   },
   robots: {
     index: true,
@@ -78,7 +106,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "isi-setelah-daftar-google-search-console",
+    google: "76f2bdf997e7dd54",
   },
 };
 
@@ -87,15 +115,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Schema untuk Person (profil pribadi)
+  // Schema untuk Person (profil pribadi) - TAMBAH VARIASI NAMA
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Muhammad Indrawan",
-    alternateName: ["Indrawan", "Indrawan Dev", "Indrawan Developer", "Troy Sakana"],
+    name: "Muhammad Indrawan Ismail",
+    alternateName: [
+      "M Indrawan", 
+      "Indrawan", 
+      "Muhammad Indrawan",
+      "Indrawan Ismail",
+      "Indrawan Dev", 
+      "Indrawan Developer", 
+      "Troy Sakana"
+    ],
     url: "https://indrawan-id.vercel.app",
-    image: "https://indrawan-id.vercel.app/profile.jpg",
-    description: "Fullstack Web Developer profesional Indonesia spesialis Next.js, React, dan TypeScript",
+    image: "https://indrawan-id.vercel.app/profile.webp",
+    description: "Muhammad Indrawan Ismail (M Indrawan) adalah fullstack web developer profesional Indonesia spesialis Next.js, React, dan TypeScript",
     jobTitle: "Fullstack Web Developer & UI Engineer",
     worksFor: {
       "@type": "Organization",
@@ -104,12 +140,16 @@ export default function RootLayout({
     knowsAbout: [
       "Web Development",
       "Fullstack Development",
-      "Next.js",
-      "React",
+      "Next.js Development",
+      "React Development",
       "TypeScript",
+      "JavaScript",
       "Frontend Development",
       "Backend Development",
-      "UI Engineering"
+      "UI Engineering",
+      "SEO Optimization",
+      "Website Performance",
+      "Tailwind CSS"
     ],
     knowsLanguage: ["Indonesian", "English"],
     nationality: "Indonesian",
@@ -123,26 +163,34 @@ export default function RootLayout({
       "https://github.com/Indrawan-maker",
       "https://www.linkedin.com/in/muhammad-indrawan-ismail-1baa13326/",
       "https://www.instagram.com/troy_sakana/",
-    ]
+    ],
+    email: "indrawanismail0@gmail.com"
   };
 
   // Schema untuk Website
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Indrawan Portfolio",
-    alternateName: ["Indrawan", "Muhammad Indrawan Portfolio", "Indrawan Fullstack Developer"],
+    name: "Muhammad Indrawan Ismail Portfolio",
+    alternateName: [
+      "Indrawan Portfolio", 
+      "M Indrawan Portfolio",
+      "Muhammad Indrawan Portfolio", 
+      "Indrawan Fullstack Developer",
+      "Portfolio Muhammad Indrawan Ismail"
+    ],
     url: "https://indrawan-id.vercel.app",
-    description: "Portfolio resmi Muhammad Indrawan (Indrawan), fullstack web developer Indonesia",
+    description: "Portfolio resmi Muhammad Indrawan Ismail (M Indrawan / Indrawan), fullstack web developer profesional Indonesia",
     author: {
       "@type": "Person",
-      name: "Muhammad Indrawan"
+      name: "Muhammad Indrawan Ismail",
+      alternateName: ["M Indrawan", "Indrawan"]
     },
     inLanguage: "id-ID",
     copyrightYear: new Date().getFullYear(),
     copyrightHolder: {
       "@type": "Person",
-      name: "Muhammad Indrawan"
+      name: "Muhammad Indrawan Ismail"
     }
   };
 
@@ -150,17 +198,53 @@ export default function RootLayout({
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Indrawan Web Development Services",
-    alternateName: "Jasa Website Indrawan",
-    image: "https://indrawan-id.vercel.app/og-image.png",
-    description: "Jasa pembuatan website profesional oleh Indrawan (Muhammad Indrawan). Spesialis landing page, company profile, dan sistem web modern.",
+    name: "Muhammad Indrawan Ismail Web Development Services",
+    alternateName: [
+      "Jasa Website Muhammad Indrawan",
+      "Jasa Website Indrawan",
+      "Jasa Website M Indrawan"
+    ],
+    image: "https://indrawan-id.vercel.app/profile.webp",
+    description: "Jasa pembuatan website profesional oleh Muhammad Indrawan Ismail (M Indrawan). Spesialis landing page, company profile, e-commerce, dan sistem web modern dengan Next.js dan React.",
     provider: {
       "@type": "Person",
-      name: "Muhammad Indrawan"
+      name: "Muhammad Indrawan Ismail",
+      alternateName: ["M Indrawan", "Indrawan"]
     },
-    areaServed: "ID",
+    areaServed: {
+      "@type": "Country",
+      name: "Indonesia"
+    },
     availableLanguage: ["Indonesian", "English"],
-    priceRange: "$$"
+    priceRange: "$$",
+    serviceType: [
+      "Website Development",
+      "Fullstack Development",
+      "Next.js Development",
+      "React Development",
+      "Landing Page Creation",
+      "E-commerce Development",
+      "Company Profile Website"
+    ]
+  };
+
+  // Schema untuk ProfilePage
+  const profileSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: {
+      "@type": "Person",
+      "@id": "https://indrawan-id.vercel.app/#person",
+      name: "Muhammad Indrawan Ismail",
+      alternateName: ["M Indrawan", "Indrawan", "Muhammad Indrawan"],
+      description: "Fullstack Web Developer profesional Indonesia spesialis Next.js, React, dan TypeScript",
+      image: "https://indrawan-id.vercel.app/profile.webp",
+      sameAs: [
+        "https://github.com/Indrawan-maker",
+        "https://www.linkedin.com/in/muhammad-indrawan-ismail-1baa13326/",
+        "https://www.instagram.com/troy_sakana/"
+      ]
+    }
   };
 
   return (
@@ -170,14 +254,25 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([personSchema, websiteSchema, serviceSchema])
+            __html: JSON.stringify([personSchema, websiteSchema, serviceSchema, profileSchema])
           }}
         />
         
-        {/* Tambahan meta tags */}
-        <meta name="author" content="Muhammad Indrawan" />
-        <meta name="copyright" content="Muhammad Indrawan" />
+        {/* Tambahan meta tags untuk SEO */}
+        <meta name="author" content="Muhammad Indrawan Ismail" />
+        <meta name="copyright" content="Muhammad Indrawan Ismail" />
         <link rel="canonical" href="https://indrawan-id.vercel.app" />
+        
+        {/* Geo Targeting */}
+        <meta name="geo.region" content="ID-KI" />
+        <meta name="geo.placename" content="Balikpapan" />
+        <meta name="geo.position" content="-1.2379;116.8529" />
+        <meta name="ICBM" content="-1.2379, 116.8529" />
+        
+        {/* Additional SEO */}
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="language" content="Indonesian" />
       </head>
       <body>{children}</body>
     </html>
