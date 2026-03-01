@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const GREETINGS = ["● Hello", "● Halo", "● Bonjour", "● Hola", "● Ciao"];
+const GREETINGS = ["● Hello", "● Halo", "● Bonjour", "● Hola", "● Ciao", "● こんにちは", "● 안녕하세요"];
 
 export default function IntroClient({ children }: { children: React.ReactNode }) {
   const [index, setIndex] = useState(0);
@@ -22,20 +22,22 @@ export default function IntroClient({ children }: { children: React.ReactNode })
     if (introSeen) return;
 
     if (index < GREETINGS.length) {
-      const timer = setTimeout(() => setIndex(i => i + 1), 400);
+      const timer = setTimeout(() => setIndex(i => i + 1), 500);
       return () => clearTimeout(timer);
     } else {
       setTimeout(() => {
         setShowContent(true);
         sessionStorage.setItem("introSeen", "true");
-      }, 200);
+      }, 800);
     }
   }, [index, introSeen]);
 
   if (!introSeen && !showContent) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
-        <p className="text-5xl font-bold text-white">
+        <p 
+        key={index}
+        className="text-5xl font-bold text-white">
           {GREETINGS[index]}
         </p>
       </div>

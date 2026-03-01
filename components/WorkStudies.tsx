@@ -1,16 +1,15 @@
-import Icon1 from "./images/uinsi-icon.webp";
+// import Icon1 from "./images/uinsi-icon.webp";
+import Icon1 from "./images/uinsi.jpg";
 import Icon2 from "./images/semar.png";
 import { Studies } from '@/components/ui/Studies';
 
 
 export const WorkStudies = ({ setActiveTab }: { setActiveTab: string }) => {
 
-
-
     return (
         <div>
 
-            <div className="flex md:grid md:w-full md:h-auto  border-2 rounded-xl border-white">
+            <div className="flex md:grid md:w-full md:h-auto border-2 rounded-xl border-white">
                 {
                     setActiveTab === 'work' ?
                         <>
@@ -18,7 +17,7 @@ export const WorkStudies = ({ setActiveTab }: { setActiveTab: string }) => {
                         </>
                         :
                         <>
-                            <Studies imageProps={Icon1} dateProps="August 2024 - August 2028" titleProps="Universitas Islam Negeri Sultan Aji Muhammad Idris Samarinda" descProps="Undergraduate in Information System" />
+                            <Studies imageProps={Icon1} dateProps="August 2024 - August 2028" titleProps="UINSI" descProps="Undergraduate in Information System" />
                         </>
                 }
             </div>

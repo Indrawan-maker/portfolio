@@ -6,16 +6,16 @@ export const Studies = ({ imageProps, dateProps, titleProps, descProps }: experi
 
     <main>
                 <div className="flex px-6 md:p-0 gap-1 md:gap-0">
-                    <ul className="flex justify-center items-center mr-4">
-                        <li className="relative grid justify-center gap-2 md:p-7">
+                    <ul className="flex justify-center items-center mr-4 ">
+                        <li className="relative grid justify-center gap-2 md:p-7 py-6">
                             <div className="absolute inset-0 flex justify-center">
                                 <div className="w-[1px] bg-white"></div>
                             </div>
-                            <div className="relative z-10 bg-white rounded-full p-3 md:p-1 w-12" >
+                            <div className="relative z-10 rounded-full p-0 h-12 md:p-0 w-12" >
                                 <Image
                                     src={imageProps}
                                     alt="uinsi"
-                                    className="rounded-full w-full h-full md:bg-white md:w-12 md:h-12"
+                                    className="rounded-full w-full h-full  md:w-12 md:h-12"
                                 />
                             </div>
                         </li>

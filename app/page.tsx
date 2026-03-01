@@ -199,7 +199,9 @@ export default function Home() {
         <Experience />
         <TechStack />
         <Project />
+        <div className="mt-120 md:mt-22">
         <Footer />
+        </div>
       </IntroClient>
 
       {/* ✅ BREADCRUMB STRUCTURED DATA */}

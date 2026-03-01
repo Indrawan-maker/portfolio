@@ -1,26 +1,25 @@
-import projectImage1 from '@/components/images/project1.webp'
-import projectImage2 from '@/components/images/project2.webp'
-import { Card } from './Card';
-
-
-
+import projectImage1 from "@/components/images/evoucher.webp";
+import projectImage3 from "@/components/images/project3.webp";
+import { Card } from "./Card";
 
 export const ProjectCard = () => {
-    return (
-        <div className='md:ml-0 md:flex md:gap-4 grid items-center justify-center'>
-        <Card projectTitle='Puzzle 3 x 3'
-        projectDescription='An anime image puzzle game in a 3x3 grid.' 
-        projectImage={projectImage1} 
-        projectLink='https://anime-puzzle-3x3.vercel.app/'
-        techStack={['tailwindCSS']}
-        />
-        {/* pemisah antar project */}
-        <Card projectTitle='Personal Portfolio'
-        projectDescription='A simple portfolio to showcase my project as a developer.' 
-        projectImage={projectImage2} 
-        projectLink='https://portfolio-sigma-virid-u677bz60w1.vercel.app/'
-        techStack={['tailwindCSS', 'nextJS']}
-        />
-        </div>
-    )
-}
+  return (
+    <div className="md:ml-0 md:flex md:gap-4 grid items-center justify-center ">
+      <Card
+        projectTitle="E - Voucher"
+        projectDescription="Aplikasi manajemen voucher yang digunakan untuk menghindari kesalahan perhitungan dan mempermudah pencatatan transaksi."
+        projectImage={projectImage1}
+        projectLink="https://github.com/Indrawan-maker/e-voucher"
+        techStack={["Laravel", "MySQL", "Livewire", "RBAC"]}
+      />
+      {/* pemisah antar project */}
+      <Card
+        projectTitle="Ceritain Alumni"
+        projectDescription="a place for you to tell stories and share experiences about your college days."
+        projectImage={projectImage3}
+        projectLink="https://cerita-alumnii.vercel.app/"
+        techStack={["react", "express", "mongodb", "microservices"]}
+      />
+    </div>
+  );
+};

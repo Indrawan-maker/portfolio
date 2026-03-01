@@ -3,7 +3,7 @@ import Link from 'next/link'
 export const Footer = () => {
     return (
         <footer
-            className="grid md:flex justify-center items-center mt-120 md:mt-0"
+            className="grid md:flex justify-center items-center mt-auto"
             translate="no"
             id="footer"
         >

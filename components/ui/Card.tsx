@@ -12,7 +12,7 @@ export const Card = ({ projectTitle, projectDescription, projectImage, projectLi
         <div>
             <Link className='justify-center items-center flex'
                 href={projectLink}>
-                <section className="w-82 h-78 md:w-80 md:h-80 border-1 border-white rounded-md transition-transform duration-300 md:mb-0 mb-6
+                <section className="w-90 h-90 md:w-90 md:h-90 border-1 border-white rounded-md transition-transform duration-300 md:mb-0 mb-8
     hover:-translate-y-2 hover:shadow-lg relative">
                     <Image
                         src={projectImage}

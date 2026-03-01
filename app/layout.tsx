@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     
     // Location Keywords
     "web developer Balikpapan",
+    "web developer Samarinda",
+    "web developer Tenggarong",
+    "web developer Tenggarong Seberang",
     "fullstack developer Kalimantan Timur",
     "developer Indonesia",
   ],
@@ -177,7 +180,7 @@ export default function RootLayout({
       "M Indrawan Portfolio",
       "Muhammad Indrawan Portfolio", 
       "Indrawan Fullstack Developer",
-      "Portfolio Muhammad Indrawan Ismail"
+      "Muhammad Indrawan"
     ],
     url: "https://indrawan-id.vercel.app",
     description: "Portfolio resmi Muhammad Indrawan Ismail (M Indrawan / Indrawan), fullstack web developer profesional Indonesia",
