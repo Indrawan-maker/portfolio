@@ -4,6 +4,7 @@ import evoucher from "@/components/images/evoucher.webp";
 import projectImage1 from "@/components/images/project1.webp";
 import projectImage2 from "@/components/images/project2.webp";
 import projectImage3 from "@/components/images/project3.webp";
+import cms from "@/components/images/readme3.webp";
 import projectImage4 from "@/components/images/project4.webp";
 import { Card } from "@/components/ui/Card";
 
@@ -49,6 +50,13 @@ export default function ProjectRoute() {
                     techStack={["tailwindCSS", "nextJS", "daisyUI"]}
                   />
                   {/* pemisah antar project */}
+                  <Card
+                    projectTitle="Costum CMS"
+                    projectDescription="Display whatever you want in website interface."
+                    projectImage={cms}
+                    projectLink="https://github.com/Indrawan-maker/uas-web"
+                    techStack={["php native", "MySQL", "admin dashboard"]}
+                  />
                   <Card
                     projectTitle="Puzzle 3 x 3"
                     projectDescription="An anime image puzzle game in a 3x3 grid."
