@@ -18,7 +18,7 @@ export const ProjectCard = () => {
         projectDescription="a place for you to tell stories and share experiences about your college days."
         projectImage={projectImage3}
         projectLink="https://cerita-alumnii.vercel.app/"
-        techStack={["react", "express", "mongodb", "microservices"]}
+        techStack={["zustand", "express", "mongodb", "microservices"]}
       />
     </div>
   );

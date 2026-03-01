@@ -13,6 +13,9 @@ import { SiMysql } from "react-icons/si";
 import { SiLaravel } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
 import { SiLivewire } from "react-icons/si";
+import zustand from "@/components/images/zustand.webp";
+import Image from "next/image";
+
 
 export const TechStack = () => {
   return (
@@ -132,6 +135,16 @@ export const TechStack = () => {
                 className="flex items-center gap-2"
               >
                 <SiMysql className="w-6 h-6 md:w-8 md:h-8 text-white" /> MySQL
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://zustand-demo.pmnd.rs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Image src={zustand} alt="Zustand" className="w-6 h-6 md:w-8 md:h-8 text-white" /> Zustand
               </a>
             </li>
             <li>
