@@ -22,7 +22,7 @@ export default function ProjectRoute() {
           <div className="mt-22 items-center justify-center flex">
             <section className="mt-16 justify-center w-88 h-60 p-4 md:w-180 md:h-80 md:p-0">
               <div className="">
-                <h4 className="flex justify-start text-gray-300 text-xl tracking-widest mb-8">
+                <h4 className="flex justify-start text-gray-300 text-xl tracking-widest mb-8 ">
                   Project
                 </h4>
                 <div className="md:ml-0 md:grid md:gap-4 grid md:grid-cols-2 items-center justify-center">
