@@ -1,6 +1,8 @@
 import HeroRoute from "@/components/HeroRoute";
 import { Footer } from "@/components/Footer";
 import evoucher from "@/components/images/evoucher.webp";
+import mynabung from "@/components/images/mynabung.webp";
+import semarweb from "@/components/images/semar-web.webp";
 import projectImage1 from "@/components/images/project1.webp";
 import projectImage2 from "@/components/images/project2.webp";
 import projectImage3 from "@/components/images/project3.webp";
@@ -26,6 +28,20 @@ export default function ProjectRoute() {
                   Project
                 </h4>
                 <div className="md:ml-0 md:grid md:gap-4 grid md:grid-cols-2 items-center justify-center">
+                    <Card
+                    projectTitle="MyNabung"
+                    projectDescription="Track transaksi anda sehari-hari"
+                    projectImage={mynabung}
+                    projectLink="https://www.mynabung.my.id"
+                    techStack={["MySQL", "NextJS", "Shadcn", "dashboard"]}
+                  />
+                  <Card
+                    projectTitle="Software House Semar"
+                    projectDescription="Landing page untuk software house semar"
+                    projectImage={semarweb}
+                    projectLink="https://www.semarweb.my.id"
+                    techStack={["NextJS", "MySQL", "framer motion"]}
+                  />
                   <Card
                     projectTitle="E - Voucher"
                     projectDescription="Aplikasi manajemen voucher yang digunakan untuk menghindari kesalahan perhitungan dan mempermudah pencatatan transaksi."
@@ -76,7 +92,7 @@ export default function ProjectRoute() {
               </div>
             </section>
           </div>
-          <div className="mt-540 md:mt-220">
+          <div className="mt-800 md:mt-320">
       <Footer />
           </div>
       </main>
