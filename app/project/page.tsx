@@ -100,7 +100,7 @@ export default function ProjectRoute() {
               </div>
             </section>
           </div>
-          <div className="mt-800 md:mt-320">
+          <div className="mt-900 md:mt-380">
       <Footer />
           </div>
       </main>

@@ -1,5 +1,5 @@
 import mynabung from "@/components/images/mynabung.webp";
-import projectImage3 from "@/components/images/project3.webp";
+import topup from "@/components/images/topup.webp";
 import { Card } from "./Card";
 
 export const ProjectCard = () => {
@@ -13,13 +13,13 @@ export const ProjectCard = () => {
                     techStack={["MySQL", "NextJS", "Shadcn", "dashboard"]}
                   />
       {/* pemisah antar project */}
-      <Card
-        projectTitle="Ceritain Alumni"
-        projectDescription="a place for you to tell stories and share experiences about your college days."
-        projectImage={projectImage3}
-        projectLink="https://cerita-alumnii.vercel.app/"
-        techStack={["zustand", "express", "mongodb", "microservices"]}
-      />
+                          <Card
+                      projectTitle="Santee Topup"
+                      projectDescription="top up berbagai  game secara online"
+                      projectImage={topup}
+                      projectLink="https://santeetopup-fe.vercel.app/id-id"
+                      techStack={["Nextjs", "express", "sequelize", "Midtrans"]}
+                    />
     </div>
   );
 };

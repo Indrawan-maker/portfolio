@@ -8,7 +8,7 @@ export const Project = () => {
         <div className="flex justify-center items-center" id="project" translate="no">
         <section className="-center w-88 h-60 p-4 md:w-160 md:h-80 md:p-0 mt-52 mb-22 md:mt-32 md:mb-0">
             <div className="flex justify-between mb-6">
-        <h4 className="flex justify-start text-gray-300 text-xl tracking-widest text-start -ml-10 md:-ml-12">Project</h4>
+        <h4 className="flex justify-start text-gray-300 text-xl tracking-widest text-start -ml-6 md:-ml-12">Project</h4>
         <Link href='/project'>
         <button className="flex justify-start text-gray-600 text-md tracking-widest cursor-pointer hover:text-white">View More</button>
         </Link>
