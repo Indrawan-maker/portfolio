@@ -10,7 +10,7 @@ import { CardTechStack } from './CardTechStack';
 export const Card = ({ projectTitle, projectDescription, projectImage, projectLink, techStack }: cardProps) => {
     return (
         <div>
-            <Link className='justify-center items-center flex'
+            <Link className='justify-center items-center flex' target='blank_'
                 href={projectLink}>
                 <section className="w-90 h-90 md:w-90 md:h-90 border-1 border-white rounded-md transition-transform duration-300 md:mb-0 mb-8
     hover:-translate-y-2 hover:shadow-lg relative">
