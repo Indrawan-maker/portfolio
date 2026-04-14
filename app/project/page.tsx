@@ -6,7 +6,6 @@ import semarweb from "@/components/images/semar-web.webp";
 import projectImage1 from "@/components/images/project1.webp";
 import projectImage2 from "@/components/images/project2.webp";
 import projectImage3 from "@/components/images/project3.webp";
-import topup from "@/components/images/topup.webp";
 import cms from "@/components/images/readme3.webp";
 import projectImage4 from "@/components/images/project4.webp";
 import { Card } from "@/components/ui/Card";
@@ -36,13 +35,6 @@ export default function ProjectRoute() {
                     projectLink="https://www.mynabung.my.id"
                     techStack={["MySQL", "NextJS", "Shadcn", "dashboard"]}
                   />
-                    <Card
-                      projectTitle="Santee Topup"
-                      projectDescription="top up berbagai  game secara online"
-                      projectImage={topup}
-                      projectLink="https://santeetopup-fe.vercel.app/id-id"
-                      techStack={["Nextjs", "express", "sequelize", "Midtrans"]}
-                    />
                   <Card
                     projectTitle="Software House Semar"
                     projectDescription="Landing page untuk software house semar"
