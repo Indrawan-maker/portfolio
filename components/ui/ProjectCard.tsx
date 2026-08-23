@@ -1,5 +1,5 @@
 import mynabung from "@/components/images/mynabung.webp";
-import taya from "@/components/images/taya.webp";
+import taya from "@/components/images/tayatopup.webp";
 import { Card } from "./Card";
 
 export const ProjectCard = () => {

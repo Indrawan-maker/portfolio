@@ -9,6 +9,7 @@ import projectImage3 from "@/components/images/project3.webp";
 import cms from "@/components/images/readme3.webp";
 import projectImage4 from "@/components/images/project4.webp";
 import { Card } from "@/components/ui/Card";
+import taya from "@/components/images/tayatopup.webp"
 
 export default function ProjectRoute() {
   return (
@@ -34,6 +35,13 @@ export default function ProjectRoute() {
                     projectImage={mynabung}
                     projectLink="https://www.mynabung.my.id"
                     techStack={["MySQL", "NextJS", "Shadcn", "dashboard"]}
+                  />
+                    <Card
+                    projectTitle="Tayatopup"
+                    projectDescription="Top up games, pulsa, voucher dll"
+                    projectImage={taya}
+                    projectLink="https://www.tayatopup.id"
+                    techStack={["posgree", "NextJS", "Nestjs", "Docker", "Midtrans"]}
                   />
                   <Card
                     projectTitle="Software House Semar"
