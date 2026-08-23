@@ -1,5 +1,5 @@
 import mynabung from "@/components/images/mynabung.webp";
-import semarweb from "@/components/images/semar-web.webp";
+import taya from "@/components/images/taya.webp";
 import { Card } from "./Card";
 
 export const ProjectCard = () => {
@@ -10,16 +10,16 @@ export const ProjectCard = () => {
                     projectDescription="Track transaksi anda sehari-hari"
                     projectImage={mynabung}
                     projectLink="https://www.mynabung.my.id"
-                    techStack={["MySQL", "NextJS", "Shadcn", "dashboard"]}
+                    techStack={["MySQL", "NextJS", "Shadcn"]}
+                  />
+                    <Card
+                    projectTitle="Tayatopup"
+                    projectDescription="Top up games, pulsa, voucher dll"
+                    projectImage={taya}
+                    projectLink="https://www.tayatopup.id"
+                    techStack={["posgree", "NextJS", "Nestjs", "Docker", "Midtrans"]}
                   />
       {/* pemisah antar project */}
-                  <Card
-                    projectTitle="Software House Semar"
-                    projectDescription="Landing page untuk software house semar"
-                    projectImage={semarweb}
-                    projectLink="https://www.semarweb.my.id"
-                    techStack={["NextJS", "MySQL", "framer motion"]}
-                  />
     </div>
   );
 };
